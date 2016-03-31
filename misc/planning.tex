@@ -1,7 +1,7 @@
 \documentclass[10pt, titlepage, oneside, a4paper]{article}
 
 \usepackage[T1]{fontenc}
-\usepackage[swedish]{babel}
+\usepackage[english]{babel}
 \usepackage{amssymb, graphicx, fancyheadings}
 \usepackage[utf8]{inputenc}
 \usepackage{wrapfig}
@@ -15,45 +15,172 @@
 \begin{document}
 \begin{center}
 \begin{large}
-5DV129: Examensarbete för kandidatexamen i datavetenskap, 15.0 hp
+  5DV129: Examensarbete för\\ kandidatexamen i datavetenskap, 15.0 hp
+  
+\vspace{8mm}
+\begin{LARGE}\textbf{Planning}\end{LARGE}
+\vspace{6mm}
 
-\textbf{Planning}
 \end{large}
 
-Carl-Evert Kangas, 801202-2995, \texttt{dv14cks@cs.umu.se}, \today
+Carl-Evert Kangas\\\texttt{dv14cks@cs.umu.se}\\March 31, 2016
+\vspace{3mm}
 
 \end{center}
 
-\thispagestyle{empty}
-%% \subsection*{Beskriv området personen arbetat inom}
-
-Vinton Cerf, född 23 juni 1943, är en internetpionjär och kallas ofta Internets fader (tillsammans med Robert Kahn, medmottagare av Turingpriset 2004).
-
-Efter att ha avlagt motsvarande en kandidatexamen i matematik på Stanford University arbetade Cerf två år på IBM som ingengör. Detta väckte intresset för datorvetenskap och Cerf lämnade IBM för studier vid UCLA (University of California, Los Angeles) där han tog en masterexamen 1970 och doktorerade 1972 med avhandlingen \textit{Multiprocessors, Semaphores, and a Graph Model of Computation}.
-
-Under sin tid som doktorand arbetade Cerf i professor Leonard Kleinrocks \textit{data packet networking group} som ansvarade för en av de fyra första noderna i ARPANET. Det var här som Cerf blev involverad i diskussionerna kring hur mjukvaran i ARPANET-värdarna skulle se ut. Efter att ha doktorerat blev Cerf forskarassistent på Stanford 1972-76 där han forskade om paketförmedlade nätverk och designade TCP (Transmission Control Program) tillsammans med Kahn.
-
-1978 delade Cerf (m.fl.) TCP i två delar. Den del av TCP som ansvarade för adressering och möjliggör routing blev IP och den del av protokollet som ansvarade för att ordna paket och garantera leverans etc blev TCP (Transmission Control Protocol).
-
-\vspace{7mm}
-
-%% \subsection*{Nämn, det du uppfattat vara dennes viktigaste bidrag}
-
-Cerfs viktigaste bidrag till världshistorien är utan tvekan att han lagt grunden till dagens TCP/IP och därmed skapat förutsättningarna för den nya värld som internet innebär.
-Detta framgår även av motiveringen till Turingpriset, även om man inte spekulerar i konsekvenserna av hans arbete:
-
-\begin{quotation}
-Vinton G. Cerf and Robert E. Kahn led the design and implementation of the Transmission Control Protocol and Internet Protocol (TCP/IP) that are the basis for the current internet. They formulated fundamental design principles of networking, specified TCP/IP to meet these requirements, prototyped TCP/IP, and coordinated several early TCP/IP implementations.
-\end{quotation}
-
-Cerf är noga med att poängtera att han inte ensam har skapat internet och framhåller ofta Robert Kahn som lika framstående. I en intervju i ett program från Vetandets värld i P1\footnote{http://t.sr.se/1w6hOKj} om Vint Cerf hävdar Patrik Fältström att Cerf var den som under 1980-talet övertalade världens regeringar och institutioner om att internet var något att satsa på.
-
-\vspace{7mm}
-
-%% \subsection*{Redogör för de problem- och frågeställningar som personen har fått priset för}
-
-De problem och frågeställningar som Cerf (och Kahn) bidragit till att lösa är i stort sett de problem som TCP och IP-protokollen hanterar, som exempel kan nämnas adressering och felkontroll.
-
-Ett annat viktigt bidrag är att Cerf i och med det som slutligen blev TCP/IP lyfter ansvaret för adressering och transport från olika nätverk till de värdar som implementerar protokollen.
+\section*{Background}
  
+A company making games have noticed that data integrity in some rare
+cases is compromised in the back end systems. These systems are web
+applications written in Java and hosted by the Google on their App Engine
+platform. Data is stored in the so called Datastore which is a
+schemaless, NoSQL database. A memory cache, also provided by the App
+Engine platform is used for speed and to keep costs down. An open
+source library called Objectify is used for convenient access to the datastore.
+
+\section*{Problem description}
+
+The customer have observed entities where data integrity is
+compromised. An object \{ dead: false, alive: true \} describing the
+state of a cat seems in rare cases end up having impossible states
+like \{ dead: false, alive: false \}.
+
+Updates to the datastore are transactional so the problem probably
+lies somewhere else. One hypothesis is that the cache is updated
+field-by-field and that the cache update may be interrupted before it
+is finnished. Another possible explanation to the behaviour could be
+related to the fact that values may be evicted from the cache if the
+cache is low on memory.
+
+The questions to be researched in the thesis are as follows:
+
+\textbf{1. Can the alleged observations be reproduced?}\\
+An essential question is whether this problem can be reproduced in a
+systematic way that support the hypothesis. While data integrity
+compromised entities\footnote{Data objects in the Datastore are known
+  as \emph{entities}} have been observed, the cause of the problem may
+be something completley different than discussed above.
+
+\textbf{2. Describe the implementation of Objectify from the
+  perspective on how transactions are handled}\\ The notion of transactions seems to be used mostly in the context of
+databases. In this case, the database itself claims to handle
+transactions. Can the concept of trasactions be extended to include
+the caching service and what would this mean in terms of additional
+computations and database accesses?
+
+\textbf{3. Which apparent solutions could be devised?}\\
+Could some well known ways of performing transactions be reused in
+this context? In case the patterns aren't applicable, then why not?
+
+
+\section*{Methods}
+
+Since the companys issues comes from a live system it’s data cannot
+be used for experiments. Conequently, to adress the first question a
+small system will be built to research the problem. A positive
+demonstration will acknowledge the problem. There are some obvious
+variables needed in this experiment: the execution time (the execution
+is shut down after 30 seconds in the platform) and the size of the
+objects to be stored. A more specific method for performing the experiment
+and handling the statistics will be discussed in the actual thesis.
+
+The second question appears to be a litterature study of ways of doing
+transactions. While not a very big area in itself when only classical
+databases are concerned, I am looking forward to see what studies
+there are on globally distributed databases.
+
+Lastly, can a regular transaction-pattern be applied to make Objectify
+transactional? This may or may not be doable within the given
+timeframe. If a complete solution appears to be out of reach, then at
+least some conclusions regarding such an implementation from the study
+described above should be drawn. 
+
+\section*{Other aspects and clarifications}
+
+\subsection*{Ethics and social considerations}
+
+None.
+
+\subsection*{Regarding the company mentioned}
+
+I am not in any way formally associated with the company mentioned; I
+am not so to speak ''doing my thesis there'' and I'm not formally
+supervised by them.
+
+This is an issue that needs to be addressed somehow. Either by ignoring
+the source of the problem (and lose some context) or formally make
+an agreement about referring to their enterprise. 
+
+\subsection*{Main focus}
+
+The main focus is on the Objectify library. There are alternative
+API:s for accessing datastore as well as the native API. A full review
+of them does not seem to add valuable information to the questions as
+they are formulated at the moment. Still, a brief review of the most
+common alternatives could be done in the Discussion chapter.
+
+\newpage
+
+\section*{Planning}
+
+It is roughly seven weeks till the nearly completed manuscript should
+be handed in at May 20. Making a complete and meaningful plan for the
+whole project is not possible, so I have deliberatly not put any
+effort into planning the last weeks.
+
+\textbf{Week 14, 4/4--8/4}\\
+High priority to making a somewhat working program that can be used
+for answering question one and design the experiment. Write an introdction and read up on relevant things.
+
+\textbf{Week 15, 11/4--15/4}\\
+Need to get into how to deal with question two, i.e. what kinds of
+notions to use. Contact developers working with Objectify regarding
+their design choices. Write method-chapter. Introduction should be finalized.
+
+
+\textbf{Week 16, 18/4--22/4}\\
+Since the mid seminar is scheduled the monday after week 16, at least 
+questions 1 and 2 stated in the problem description earlier needs to either
+have an answer or a defined type of answer. Otherwise they
+need to be reformulated urgently. Method-chapter should be more or
+less final.
+
+
+
+
+\subsection*{Litterature}
+
+There are loads of litterature regarding databases and my starting
+point is the textbooks used at the database courses held by the
+department: Henry F. Korth -- Database System Concepts and Elmarsi
+Ramex -- Fundamentals of Database Systems. The latter cover in its
+latest edition both distributed databases and NoSQL systems.
+
+Also there seems to exist a lot of high quality papers by
+major companies in this field.
+
+The source code for Objectify seems well documented and should
+investigated and some contact with the community around it needs to be established.
+
+\subsection*{Typesetting and source code}
+
+I'm planning to write the thesis in LaTeX mainly because of the BibTeX
+reference management. A public Git repository at
+\texttt{https://github.com/carlevert/bt} has been set up. The
+repository so far contains mostly boilerplate LaTeX, but will later be
+accompanied by source code for the projects.
+
+\section*{Risks and risk management}
+
+One obvious risk is that this project fails at the first question,
+i.e. it's not possible to demonstrate the inconsitencies. To make the
+impact of this happening a demonstration of the problem is of top
+priority, that is, scheduled as soon as possible.
+
+Another risk is that the theory regarding this problem is too
+straightforward. While not an optimal solution because it may cause
+more breadth than depth is extending the area of
+research can be a solution. A total shift in focus is the ultimate but
+unwanted solution.
+
 \end{document}
