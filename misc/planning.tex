@@ -26,7 +26,7 @@
 Carl-Evert Kangas\\\texttt{dv14cks@cs.umu.se}\\March 31, 2016
 \vspace{3mm}
 
-\end{center}
+\end{center} 
 
 \section*{Background}
  
@@ -43,7 +43,8 @@ source library called Objectify is used for convenient access to the datastore.
 The customer have observed entities where data integrity is
 compromised. An object \{ dead: false, alive: true \} describing the
 state of a cat seems in rare cases end up having impossible states
-like \{ dead: false, alive: false \}.
+like \{ dead: false, alive: false \}\footnote{The actual objects are
+  both larger and more complex}.
 
 Updates to the datastore are transactional so the problem probably
 lies somewhere else. One hypothesis is that the cache is updated
@@ -79,7 +80,7 @@ Since the companys issues comes from a live system it’s data cannot
 be used for experiments. Conequently, to adress the first question a
 small system will be built to research the problem. A positive
 demonstration will acknowledge the problem. There are some obvious
-variables needed in this experiment: the execution time (the execution
+variables that needs to be included in the experiment: the execution time (the execution
 is shut down after 30 seconds in the platform) and the size of the
 objects to be stored. A more specific method for performing the experiment
 and handling the statistics will be discussed in the actual thesis.
@@ -103,7 +104,7 @@ None.
 
 \subsection*{Regarding the company mentioned}
 
-I am not in any way formally associated with the company mentioned; I
+I am not in any way formally associated with the company mentioned. I
 am not so to speak ''doing my thesis there'' and I'm not formally
 supervised by them.
 
