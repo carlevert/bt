@@ -1,0 +1,55 @@
+\documentclass[a4paper,11pt, report]{report}
+
+%\usepackage{UmUThesis}          % Standard English
+\usepackage[noindent]{UmUThesis} % Non indented English
+%\usepackage[se]{UmUThesis}      % Swedish
+
+\usepackage[utf8]{inputenc}
+\usepackage{courier}              % Nicer fonts are used. (not necessary)
+\usepackage{pslatex}              % Also nicer fonts. (not necessary)
+\usepackage{lmodern}             % Optional fonts. (not necessary)
+
+%\usepackage{tabularx}
+%\usepackage{graphicx} 
+
+\title{Objectify and Google App Engine}
+\subtitle{}
+\author{Carl-Evert Kangas}
+\supervisor{Suna Bench}
+\supervisore{-}
+\examiner{}
+\semester{Spring semester 2016}
+\course{Examensarbete, 15 hp}
+\education{Kandidatprogrammet i datavetenskap, 180 hp}
+\graphicspath{{img/}}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% \maketitle
+
+% \cleardoublepage
+
+\input{0-abstract}
+\input{0-acknowledgements}
+
+% \tableofcontents
+% \cleardoublepage
+
+\pagestyle{fancy}
+\setcounter{page}{1}
+
+\input{1-introduction}
+
+
+\cleardoublepage
+
+\addcontentsline{toc}{chapter}{\bibname}
+\bibliographystyle{plain}
+\bibliography{sources}
+
+% \appendix
+% \chapter{First Appendix}
+
+\end{document}
