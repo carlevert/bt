@@ -2,17 +2,32 @@
 
 Why this is relevant in general
 
-\section{Definitions}
+\section{Background}
+
+Most games have some kind of skill based ranking system in order to make the game interesting. Usually the skills are expressed as a score, ie a number.
+
+The score that players get in a game may also be used to determine winners of tournaments, for gambling, for pairing similarily skilled players in a matchmaking process and so on.
+
+Determine winning player
+
+Leaderboard
+
+Other uses for ranking: AI
+
+\section{Problem description}
+
+\begin{shaded} How to get a live rank for a score when set of scores are large \end{shaded}
+
+\subsection{Infrastructure}
 
 Google App Engine (often referred to as GAE or simply App Engine) is a platform as a service (PaaS) cloud computing platform for developing and hosting web applications in Google-managed data centers. Applications are sandboxed and run across multiple servers.
 
-\subsection{Datastore}
+Java, other languages
+ 
+Other services (memory cache)
 
-App Engine Datastore is a schemaless NoSQL datastore providing robust, scalable storage for your web application.
+\textbf{App Engine Datastore} is a schemaless NoSQL datastore providing robust, scalable storage for your web application.
 
 The Datastore holds data objects known as entities. An entity has one or more properties, named values of one of several supported data types: for instance, a property can be a string, an integer, or a reference to another entity. Each entity is identified by its kind, which categorizes the entity for the purpose of queries, and a key that uniquely identifies it within its kind. The Datastore can execute multiple operations in a single transaction. By definition, a transaction cannot succeed unless every one of its operations succeeds; if any of the operations fails, the transaction is automatically rolled back. This is especially useful for distributed web applications, where multiple users may be accessing or manipulating the same data at the same time.
 
-
-\section{Objectify}
-
-Objectify is a Java data access API specifically designed for the Google App Engine datastore. It occupies a "middle ground"; easier to use and more transparent than JDO or JPA, but significantly more convenient than the Low-Level API. Objectify is designed to make novices immediately productive yet also expose the full power of the GAE datastore.
+\subsubsection{Pricing}

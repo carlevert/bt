@@ -7,17 +7,20 @@
 \usepackage[utf8]{inputenc}
 \usepackage{courier}              % Nicer fonts are used. (not necessary)
 \usepackage{pslatex}              % Also nicer fonts. (not necessary)
-\usepackage{lmodern}             % Optional fonts. (not necessary)
+% \usepackage{lmodern}             % Optional fonts. (not necessary)
 
 %\usepackage{tabularx}
 %\usepackage{graphicx} 
 
-\title{Objectify and Google App Engine}
-\subtitle{}
+\usepackage{framed,color}
+\definecolor{shadecolor}{rgb}{1.0,0.9,0.9}
+
+\title{Ranking highscores}
+\subtitle{An online approach to ranking highscores with the q-digest algorithm}
 \author{Carl-Evert Kangas}
 \supervisor{Suna Bench}
-\supervisore{-}
-\examiner{}
+\supervisore{}
+\examiner{Juan Carlos Nieves Sanchez}
 \semester{Spring semester 2016}
 \course{Examensarbete, 15 hp}
 \education{Kandidatprogrammet i datavetenskap, 180 hp}
@@ -27,20 +30,24 @@
 
 \begin{document}
 
-% \maketitle
+\maketitle
 
-% \cleardoublepage
+\cleardoublepage
 
 \input{0-abstract}
-\input{0-acknowledgements}
-
-% \tableofcontents
-% \cleardoublepage
+\input{0-acknowledgements} 
+ 
+\tableofcontents
+\cleardoublepage
 
 \pagestyle{fancy}
 \setcounter{page}{1}
 
 \input{1-introduction}
+\input{2-algorithms}
+\input{3-method}
+\input{4-results}
+\input{5-discussion}
 
 
 \cleardoublepage
@@ -53,3 +60,4 @@
 % \chapter{First Appendix}
 
 \end{document}
+ 

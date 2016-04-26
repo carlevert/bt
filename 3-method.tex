@@ -1,0 +1,40 @@
+\chapter{Method}
+
+Can ranking be acomplished cheaper by using an online algorithm like q-digest
+rather than Bucket with Global Query.
+
+\section{Problem description revisited}
+
+\begin{shaded}
+
+Current implementation
+
+Motivation for selecting q-digest
+
+\end{shaded}
+
+\section{Data}
+
+Use synthetic data. Need to prove or at least argue that the synthetic data is valid for the experiment.
+
+\begin{shaded}
+
+  Distribution of highscores?
+
+  Distribution over time?
+ 
+\end{shaded}
+
+\section{What and how to measure}
+
+Get technical
+
+Total execution time (update score + ranking)
+
+Number of datastore accesses
+
+Assume number of requests and data are equal
+
+\section{Limitations}
+
+The data set grows over time. Will be ignored, only focus on case when the set of highscores are reasonably large.
