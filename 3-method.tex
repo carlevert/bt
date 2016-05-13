@@ -1,21 +1,37 @@
 \chapter{Method}
 
-Can ranking be acomplished cheaper by using an online algorithm like q-digest
-rather than Bucket with Global Query.
+The question to be researched is whether an adaptive bucket-table can be made to do ranking more efficient than a static table with offline updates.
 
 \section{Problem description revisited}
 
-\begin{shaded}
 
-Current implementation
+The Companys current ranking algorithm is an implementation of the algorithm Bucket with Global Query. The highscores are stored in Datastore as entities with a username and a highscore. A background job runs periodically scanning the highscores making the bucket-table that contains ranks and scores needed to make the estimates. the The entities are indexed on highscore-property which is essential to make the process of iterating through the whole set doable.
 
-Motivation for selecting q-digest
+An exerpt from the bucket-table may look like table \ref{table:ranking-table}. For example, to estimate rank for score $2\;050$ which falls in bucket 6, start by calculating what the score range in bucket 6 is, in this case $2\;204 - 1\;961 = 243$. Then calculate the estimated rank by adding the quotient 
 
-\end{shaded}
+\begin{table}
+  \begin{center}
+  \begin{tabular}{ c c c c }
+  Bucket no & Start score & Start rank & Size \\
+  5 & 1 515 & 83 & 22 \\ 
+  6 & 1 961 & 105 & 23 \\ 
+  7 & 2 204 & 128 & 23 \\ 
+  8 & 2 574 & 151 & 24 \\  
+  9 & 2 852 & 175 & 25 \\ 
+\end{tabular}
+\caption{Excerpt from bucket-table}
+\label{table:ranking-table}
+\end{center}
+\end{table}
+
+\section{Hypothesis} 
+  
 
 \section{Data}
 
-Use synthetic data. Need to prove or at least argue that the synthetic data is valid for the experiment.
+The reason for using synthetic data is mainly practical. The production system cannot be altered in such a way that real world data could be tapped within this experiments timeframe. Also, an experiment with real world data would either take a full week to conduct or have to make serveral assumptions rendering the experiment no more authentic than the one with syntetic data that will be used.
+
+On the flip-side, the distribution of the scores is well known. 2) synthetic input to the experiment may be of a more generic nature than real world data. 3) The different characteristics of data in the start and the end of the experiment are not too interesting even from a practical point of view since they only represent a minor part of the total workload.
 
 \begin{shaded}
 
@@ -38,3 +54,5 @@ Assume number of requests and data are equal
 \section{Limitations}
 
 The data set grows over time. Will be ignored, only focus on case when the set of highscores are reasonably large.
+
+Omit precision measures. While interesting, not interesting at all if proposed method seems to be too expensive. Could however be interesting as a follow up study. -

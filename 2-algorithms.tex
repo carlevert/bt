@@ -1,38 +1,65 @@
 \chapter{Ranking algorithms}
 
 \begin{shaded}
-
+  
   What is ranking, formal definition
+ 
+Wikipedia, Von Neumann universe: The rank of a well-founded set is defined inductively as the smallest ordinal number greater than the ranks of all members of the set.[1] In particular, the rank of the empty set is zero, and every ordinal has a rank equal to itself. (???)
 
-  Types of ranking algorithms - deterministic vs nondeterministic
+``We wish to find a ranking of the objects consistent with the
+partial order that minimizes the sum of pairwise discrepancies
+with the input information'' (Deterministic pivoting algorithms
+for constrained ranking and clustering problems)
 
+Types of ranking algorithms - exact vs approximating
+ 
 \end{shaded}
+
+
+
+\textbf{Types of ranking algorithms:} Ranking algorithms can coarsely be divided in two categories: \emph{exact} and \emph{approximating} algorithms. The exact algorithms deal with the ranking problem by sorting and counting. As already mentioned in the introduction, obtaining an exact rank may not be necessary. Other considerations such as speed and cost may be more important. Approximating algorithms estimate the rank by interpolation within a segement of ranks. This segment may be defined with an \emph{offline-method} or with an \emph{online-method} with a \emph{streaming algorithm}.  
+
+\textbf{Stability} In both cases a sorted list needs to be created. If the chosen sorting algorithm is not stable the ranking will be non-deterministic. This may or may not be a problem depending on the application. 
+
 
 \section{Deterministic algorithms}
 
-\begin{shaded}
+\subsection{Rank by counting}
 
-  Native solution (counting)
+The naive approach to getting the rank for a score is to obtain a sorted list from the set of scores. Then start counting elements in that list that scores higher than the score in question.
 
-  Tree based approach
-  
-\end{shaded}
+$ S = { s_n } $
+
+$ L $ sorted list
+
+Return ordinal number for $s_n$
+
+\subsection{Tree based approach}
+
+\href{https://cloud.google.com/datastore/docs/articles/fast-and-reliable-ranking-in-datastore/}{Fast and Reliable Ranking in Datastore} 
+
 
 \section{Nondeterministic algorithms}
 
 \begin{shaded}
-	Offline approach
+ Approximating rank from statistical measures
 
-  Approximating rank from statistical measures
+ What can be said about Non-parametric statistics?
 
-  Online/streaming algorithms
+ Offline approach
 
+ Online/streaming algorithms
 \end{shaded}
 
 \subsection{Bucket with Global Query}
+
+\href{https://cloud.google.com/datastore/docs/articles/fast-and-reliable-ranking-in-datastore/}{Fast and Reliable Ranking in Datastore} 
+
 
 \subsection{Frugal streaming}
 
 \cite{frugal_streaming}
 
-\subsection{Q-digest}
+\subsection{Quantile Digest}
+
+\cite{quantile_digest}

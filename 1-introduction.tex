@@ -1,24 +1,70 @@
 \chapter{Introduction}
 
-Why this is relevant in general
-
 \section{Background}
+
+\begin{shaded}
+  Define ranking. Citation from Wikipedia, need better source.
+\end{shaded}
+``A ranking is a relationship between a set of items such that, for any two items, the first is either 'ranked higher than', 'ranked lower than' or 'ranked equal to' the second''
+
+\begin{shaded}
+  Typical CS related ranking scenarios - AI, search engines
+\end{shaded}
+ 
+
+
+
+\begin{shaded}
+  Scoring function - How to produce ordinal numbers 
+\end{shaded}
+
+\subsection{Ranking in online games}
+
+\begin{shaded}
+Define what ranking is in the context of games. Ie what to rank time or skills? In case of skills - same skills may not translate into same score (as in TrueSkill). 
+
+\end{shaded}
+
+\textbf{Determine winning player or creating a leaderboard}
 
 Most games have some kind of skill based ranking system in order to make the game interesting. Usually the skills are expressed as a score, ie a number.
 
+
+Higher score \ra better
+
+TrueSkill (scoring function) \ra score
+
+time \ra lower or higher time is better
+
+\textbf{Matching players}
 The score that players get in a game may also be used to determine winners of tournaments, for gambling, for pairing similarily skilled players in a matchmaking process and so on.
 
-Determine winning player
+\textbf{Approximate ranks are OK in many cases} Approximate matches of queries are commonplace in the text world (Top-k Selection Queries over Relational
+Databases: Mapping Strategies and
+Performance Evaluation)
 
-Leaderboard
-
-Other uses for ranking: AI
-
+General requirements (ie. an exact solution may not be needed all the time - may be crucial among the highest scores, when competing and if there is some gambling.
+  
 \section{Problem description}
 
-\begin{shaded} How to get a live rank for a score when set of scores are large \end{shaded}
+\begin{shaded}The goal with this section is to
+
+  1) clearify why this seemingly trivial problem is a real problem (O(n) \ra not feasible
+
+  2) Something about a a very common business model (small startup, free-to-play) limited budget and business not large enough to run server park on its own. \end{shaded}
+
+How to get a live rank for a score when set of scores are large
 
 \subsection{Infrastructure}
+
+\begin{shaded}
+  Running applications on Platform-as-a-Service-services have implications on the application to be run.
+
+  Performance-related-issues, cogestion.
+
+  Pricing.
+
+  \end{shaded}
 
 Google App Engine (often referred to as GAE or simply App Engine) is a platform as a service (PaaS) cloud computing platform for developing and hosting web applications in Google-managed data centers. Applications are sandboxed and run across multiple servers.
 
@@ -28,6 +74,6 @@ Other services (memory cache)
 
 \textbf{App Engine Datastore} is a schemaless NoSQL datastore providing robust, scalable storage for your web application.
 
-The Datastore holds data objects known as entities. An entity has one or more properties, named values of one of several supported data types: for instance, a property can be a string, an integer, or a reference to another entity. Each entity is identified by its kind, which categorizes the entity for the purpose of queries, and a key that uniquely identifies it within its kind. The Datastore can execute multiple operations in a single transaction. By definition, a transaction cannot succeed unless every one of its operations succeeds; if any of the operations fails, the transaction is automatically rolled back. This is especially useful for distributed web applications, where multiple users may be accessing or manipulating the same data at the same time.
-
 \subsubsection{Pricing}
+
+Price model
