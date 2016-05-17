@@ -4,12 +4,12 @@ The question to be researched is whether an adaptive bucket-table can be made to
 
 \section{Problem description revisited}
 
+The Companys current ranking algorithm is an implementation of the algorithm Bucket with Global Query. The highscores are stored in Google App Engines Datastore as entities with properties username and a score. A background job  periodically iterates through the highscores making the bucket-table that contains ranks and scores needed to make the estimates. The entities are indexed on highscore-property which is essential to make the process of iterating through the whole set doable.
 
-The Companys current ranking algorithm is an implementation of the algorithm Bucket with Global Query. The highscores are stored in Datastore as entities with a username and a highscore. A background job runs periodically scanning the highscores making the bucket-table that contains ranks and scores needed to make the estimates. the The entities are indexed on highscore-property which is essential to make the process of iterating through the whole set doable.
+An exerpt from the bucket-table may look like table \ref{table:ranking-table}. For example, to estimate rank for score $2\;050$ which falls in bucket 6, start by calculating what the score range in bucket 6 is, in this case $2\;204 - 1\;961 = 243$. $2\;050$ is $89$ scorepoints in the bucket and hence the rank is calculated as $83 + 23 \times \frac{89}{243} \approx 91$. See figure \ref{fig:interpolation} for a visual representation of the example.
 
-An exerpt from the bucket-table may look like table \ref{table:ranking-table}. For example, to estimate rank for score $2\;050$ which falls in bucket 6, start by calculating what the score range in bucket 6 is, in this case $2\;204 - 1\;961 = 243$. Then calculate the estimated rank by adding the quotient 
 
-\begin{table}
+\begin{table}[h]
   \begin{center}
   \begin{tabular}{ c c c c }
   Bucket no & Start score & Start rank & Size \\
@@ -24,8 +24,30 @@ An exerpt from the bucket-table may look like table \ref{table:ranking-table}. F
 \end{center}
 \end{table}
 
+\begin{figure}[h!]
+  \centering
+  \caption{Linear interpolation of rank for score 2050}
+  \label{fig:interpolation}
+  \includegraphics[width=8cm]{img/interpolation.jpg}
+\end{figure}
+
 \section{Hypothesis} 
-  
+
+\begin{figure}[h]
+  \centering
+  \caption{Error over time}
+  \label{fig:errortime}
+  \includegraphics[width=8cm]{img/hypothesis2.jpg}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \caption{Error over time}
+  \label{fig:errortime}
+  \includegraphics[width=8cm]{img/hypothesis.jpg}
+\end{figure}
+
+
 
 \section{Data}
 
@@ -43,16 +65,19 @@ On the flip-side, the distribution of the scores is well known. 2) synthetic inp
 
 \section{What and how to measure}
 
-Get technical
+\begin{shaded}
+  Measure relative error and execution time
 
-Total execution time (update score + ranking)
+  Number of datastore accesses
 
-Number of datastore accesses
+  Total execution time (update score + ranking)
+\end{shaded}
 
-Assume number of requests and data are equal
+
+
+
 
 \section{Limitations}
 
 The data set grows over time. Will be ignored, only focus on case when the set of highscores are reasonably large.
 
-Omit precision measures. While interesting, not interesting at all if proposed method seems to be too expensive. Could however be interesting as a follow up study. -
