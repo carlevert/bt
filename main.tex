@@ -15,9 +15,15 @@
 \usepackage{hyperref}
 
 \usepackage{amssymb}
+\usepackage{cleveref}
+\usepackage{nameref}
 
-\newcommand{\mytitle}{Ranking scores}
-\newcommand{\mysubtitle}{A dynamic approach to the Bucket with Global query algorithm}
+\usepackage{csquotes}
+\SetBlockThreshold{1}
+
+
+\newcommand{\mytitle}{Ranking Highscores}
+\newcommand{\mysubtitle}{Evaluation of a dynamic Bucket with Global query algorithm}
 
 \newcommand{\ra}{$\rightarrow\;$}
 
@@ -45,21 +51,31 @@
 
 
 %\usepackage{tabularx}
-%\usepackage{graphicx} 
+%\usepackage{graphicx}  
+
+\usepackage{mdframed}
 
 \usepackage{framed,color}
 \definecolor{shadecolor}{rgb}{1.0,0.9,0.9}
 
+\newcommand{\todo}[1] {
+  \begin{shaded}
+    \textbf{TODO} #1
+  \end{shaded}
+}
+
+  
+ 
 \title{\mytitle}
 \subtitle{\mysubtitle}
 \author{Carl-Evert Kangas}
-\supervisor{Suna Bench} 
+\supervisor{Suna Bensch} 
 \supervisore{}
 \examiner{Juan Carlos Nieves Sanchez}
 \semester{Spring semester 2016}
 \course{Examensarbete, 15 hp}
 \education{Kandidatprogrammet i datavetenskap, 180 hp}
-\graphicspath{{img/}} 
+\graphicspath{{img/}}  
 
 \pagestyle{empty}
 
@@ -91,7 +107,12 @@
 \bibliographystyle{plain}
 \bibliography{sources}
 
-% \appendix
+\appendix
+
+\input{frugal}
+
+\input{source-code}
+
 % \chapter{First Appendix}
 
 \end{document}

@@ -1,2 +1,9 @@
 \chapter{Conclusion and Future Directions}
 
+From the results in the previous chapter it is clear (somewhat clear) that the improved ranking algorithm with dynamic buckets perform better with the current settings of the experiment.
+
+There are however a bunch of parameters to play with in both cases, such as initial bucket sizes when it comes to tuning the algorithm itself and the distribution of the initial highscores as well as the distribution of the highscores generated during the test.
+
+There are at least two interesting paths to follow from here. First, the Company do not have a clear definition of what good enough ranking is. Their current rank estimates are obviously good enough but maybe even unnecessarily good with too frequent rebuilds of the bucket table. Secondly, optimizing the new implementation by utilizing a memory cache on a lower level would probably result in significant gains.
+
+
