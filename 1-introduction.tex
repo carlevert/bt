@@ -1,87 +1,49 @@
 \chapter{Introduction}
 
-\begin{mdframed}[backgroundcolor=red,innerleftmargin=15pt,leftmargin=-10pt,rightmargin=-10pt, innerrightmargin=15pt,innertopmargin=10pt,innerbottommargin=10pt, fontcolor=white, skipabove=20pt, linewidth=0]
-
-  Please do not pay so much attention to this chapter since it is far from reviewable in this state.
-
-  A current build of this thesis is always available at \href{http://www.cs.umu.se/~dv14cks/thesis.pdf}{http://www.cs.umu.se/~dv14cks/thesis.pdf}
-
-\end{mdframed}
-
-
 \section{Background}
 
-\begin{shaded}
-  Define ranking. Citation from Wikipedia, need better source.
-\end{shaded}
-``A ranking is a relationship between a set of items such that, for any two items, the first is either 'ranked higher than', 'ranked lower than' or 'ranked equal to' the second''
+Ranking can informally be defined as ``a relationship between a set of items such that, for any two items, the first is either 'ranked higher than', 'ranked lower than' or 'ranked equal to' the second'' \cite{wiki:ranking}.
 
-\begin{shaded}
-  Typical CS related ranking scenarios - AI, search engines
-\end{shaded}
- 
+Typical applications that are related to ranking include picking the most relevant search results when searching the web or an online catalog. To a great extent, litterature about ranking such as Raman and Joachims article \emph{Learning Socially Optimal Information Systems from Egoistic Users} \cite{raman} deals with creating a ranking from a set of parameters such as a users behaviour on a website. When searching the web, the all dominating algorithms at work are Googles PageRank and its successors which assignings a numerical weight to each page based on incoming links, among other things\footnote{While Google is not exactly transparent about these matters, the original PageRank seems to be deprecated by 2016.} 
 
+The question of how to assign weights to items in a set is not adressed in this thesis. Instead, the focus is on obtaining the rank for a score (weight) in the context of an online computer game.   
 
- 
-\begin{shaded}
-  Scoring function - How to produce ordinal numbers 
-\end{shaded}
+\section{Ranking in online games}
 
-\subsection{Ranking in online games}
+Ranking in computer games is mainly done to reward skilled or lucky players. Introducing a dimension of competetion makes the game more exciting and hopefully -- from the game makers point of view -- more profitable. This can be done by creating a leaderbord that shows the highest scores or by giving some measure of improvement to the player, eg. number of ranks advanced by the last game. Other reasons for ranking skills in computer games including gambling, matching equally skilled players for challenges
 
-\begin{shaded}
-Define what ranking is in the context of games. Ie what to rank time or skills? In case of skills - same skills may not translate into same score (as in TrueSkill).  
+So what properties are used for ranking players? A common way to measure a players skills is to assign the player score for picking diamonds, riding a bikes in some skilled way or killing a monster, ie many diamonds translate into a higher score and a higher rank. Also, lower score could be better in case score is time and faster is better, and then there are countless of variations of these two.
 
-\end{shaded}
+It should be noted equal skills during a game need not necessarily correspond with the same score. In the TrueSkill\texttrademark Ranking System created by Microsoft for Xbox Live a new, unexperienced player can get a higher score than a more skilled one. The motivation for this is to keep the game interesting \cite{trueskill}. 
 
-\textbf{Determine winning player or creating a leaderboard}
+\todo{Approximate ranks are OK -  ie. an exact solution may not be needed all the time - may be crucial among the highest scores, when competing and if there is some gambling.}
 
-Most games have some kind of skill based ranking system in order to make the game interesting. Usually the skills are expressed as a score, ie a number.
-
-Higher score \ra better
-
-TrueSkill (scoring function) \ra score
-
-time \ra lower or higher time is better
-
-\textbf{Matching players}
-The score that players get in a game may also be used to determine winners of tournaments, for gambling, for pairing similarily skilled players in a matchmaking process and so on.
-
-\textbf{Approximate ranks are OK in many cases} Approximate matches of queries are commonplace in the text world (Top-k Selection Queries over Relational
-Databases: Mapping Strategies and
-Performance Evaluation)
-
-General requirements (ie. an exact solution may not be needed all the time - may be crucial among the highest scores, when competing and if there is some gambling.
-  
 \section{Problem description}
 
-\begin{shaded}The goal with this section is to
+The questions to researched in this thesis are
 
-  1) clarify why this seemingly trivial problem is a real problem (O(n) \ra not feasible
+\begin{enumerate}
+   \setlength\itemsep{-0.4em}
+\item How to get a live rank for a score when set of scores is large
+  \item Is it possible to improve the Bucket with Global Query algorithm
+\end{enumerate}
 
-  2) Something about a a very common business model (small startup, free-to-play) limited budget and business not large enough to run server park on its own. \end{shaded}
+The rest of this section will outline the properties of the system that the second question aims to improve.
 
-How to get a live rank for a score when set of scores are large
+\subsection{The Company}
+
+Something about a a very common business model (small startup, free-to-play) limited budget and business not large enough to run server park on its own.
+
+\subsection{The Application}
+
+Game, number of users
 
 \subsection{Infrastructure}
 
-\begin{shaded}
-  Running applications on Platform-as-a-Service-services have implications on the application to be run.
+The backend handling the highscores and rankings runs on Google App Engine (GAE) which is a Platform-as-a-Service-cloud service (PaaS). The current system is implemented in Java.
 
-  Performance-related-issues, cogestion.
+Since applications running on GAE do not have access to a file system, data is stored in the App Engine Datastore which is NoSQL key-value-store. While the application part of the GAE scales automatically as far as the configuration allows, the throughput when writing to the same object in the Datastore is very limited and measures need to be taken to avoid cogestion. 
 
-  Pricing.
+Finally a service provided by the GAE worth mentioning is the memory cache. The Memory cache or memcahce is provided at different service levels, paid and free, the later without any guarantees at all. The memcache may be used for keeping the number of reads from the datastore at a minimum. It is however not durable and cache-misses needs to be handled gracefully.
 
-  \end{shaded}
-
-Google App Engine (often referred to as GAE or simply App Engine) is a platform as a service (PaaS) cloud computing platform for developing and hosting web applications in Google-managed data centers. Applications are sandboxed and run across multiple servers.
-
-Java, other languages
- 
-Other services (memory cache)
-
-\textbf{App Engine Datastore} is a schemaless NoSQL datastore providing robust, scalable storage for your web application.
-
-\subsubsection{Pricing}
-
-Price model
+\section{Outline}

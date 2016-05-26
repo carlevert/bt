@@ -10,56 +10,6 @@ Since score in this case is measured in milliseconds and lower timings are bette
 
 A background job  periodically iterates through all the highscores making the bucket-table that contains ranks and scores needed to make the estimates. The entities are indexed on highscore-property which is essential to make the process of iterating through the whole set doable.
 
-\todo{Following examples on how the algorithm operates should be moved to previous chapter}
-
-An exerpt from the bucket-table may look like table \ref{table:ranking-table}. For example, to estimate rank for score $2\;050$ which falls in bucket 6, start by calculating what the score range in bucket 6 is, in this case $2\;204 - 1\;961 = 243$. $2\;050$ is $89$ scorepoints in the bucket and hence the rank is calculated as $83 + 23 \times \frac{89}{243} \approx 91$. See figure \ref{fig:interpolation} for a visual representation of the example.
-
-\begin{table}[h]
-  \begin{center}
-  \begin{tabular}{ c c c c }
-    Bucket no & Start score & Start rank & Size \\
-    5 & 1 515 & 83 & 22 \\ 
-    6 & 1 961 & 105 & 23 \\ 
-    7 & 2 204 & 128 & 23 \\ 
-    8 & 2 574 & 151 & 24 \\  
-    9 & 2 852 & 175 & 25 \\ 
-  \end{tabular} 
-  \caption{Excerpt from bucket-table}
-  \label{table:ranking-table}
-  \end{center}
-\end{table}
-
-\begin{figure}[h!]
-  \centering
-  \caption{Linear interpolation of rank for score 2050}
-  \label{fig:interpolation}
-  \includegraphics[width=8cm]{img/interpolation.jpg}
-\end{figure}
-
-If an update of a highscore from a lower one score to a higher occurs but the new score is within the the same bucket as the previous one, the subsequent estimate will be the same for any score since the bucket-table is unchanged. Because the underlying distribution is changed the error may be different but not necessarily worse.
-
-\todo{This is not 100 \% correct}
-
-On the other hand, if a highscore estimate goes from a lower rank bucket to a higher one, a subsequent scan of the highscores would result in a table where the new bucket will grow by one and, start-rank of buckets after the new to and including the former one will increase by one and the bucket for the previous estimate would shrink by one. Se figure \ref{fig:change-buckets}.
-
-\todo{Illustration}
-
-% \begin{figure}[h]
-%  \centering
-%  \caption{A new highscore breaking the bucket-table}
-%  \label{fig:change-buckets}
-%  \includegraphics[width=8cm]{img/change-buckets.png}
-%\end{figure}
-
-Future high scores will add to the bucket-tables deviation from a theorethical \emph{true} bucket-table and as a consequence rank estimates will show a growing error with respect to the true rank until the bucket-table is recreated (Figure \ref{fig:errortime}).
-
-\begin{figure}[h]
-  \centering
-  \caption{Error over time}
-  \label{fig:errortime}
-  \includegraphics[width=8cm]{img/hypothesis2.jpg}
-\end{figure}
-
 \section{Hypothesis} 
 
 The current implementation starts a background job that builds the bucket-table every ten minutes. When the scan is complete a reference is set to the new table and the old one is discarded. The accumulated error is at its maximum right before the switch and will in the forthcoming reasonings serve as an upper limit for what would be an acceptable performance.
@@ -67,8 +17,6 @@ The current implementation starts a background job that builds the bucket-table 
 The total cost for providing the ranking service with the current implementation and the implementation to be assessed is $n \times costforestimate + \frac{ costfortablecreation}{n}$.
 
 \todo{Better formula}
-
-\todo{Rewrite hypothesis}
 
 The hypothesis is as follows:
 
