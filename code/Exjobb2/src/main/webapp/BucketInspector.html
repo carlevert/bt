@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BucketInspector</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#reload").on("click", function() {
+                alert('Hello');
+            });
+        });
+    </script>
+    <style type="text/css">
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .toolbar {
+            padding: 20px;
+            border-bottom: 1px solid black;
+            background-color: white;
+        }
+
+        body {
+            background-color: #eee;
+            font-family: sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="toolbar">
+        <input type="text" id="url" placeholder="URL" value="/rankestimator">
+        <input type="button" value="Reload" id="reload">
+        <label for="range_from">Range:</label>
+        <input type="text" id="range_from" size="5" placeholder="From">
+        <input type="text" id="range_to" size="5" placeholder="To">
+
+    </div>
+
+
+</div>
+</body>
+</html>

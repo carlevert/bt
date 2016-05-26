@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+    <servlet>
+        <servlet-name>SetupHighscores</servlet-name>
+        <servlet-class>SetupHighscores</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetupHighscores</servlet-name>
+        <url-pattern>/highscores_admin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Highscore</servlet-name>
+        <servlet-class>HighscoreServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Highscore</servlet-name>
+        <url-pattern>/highscore</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Highscores</servlet-name>
+        <servlet-class>HighscoresServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Highscores</servlet-name>
+        <url-pattern>/list_highscores</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ScanHighscores</servlet-name>
+        <servlet-class>ScanHighscoresServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ScanHighscores</servlet-name>
+        <url-pattern>/scan</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RankEstimator</servlet-name>
+        <servlet-class>RankEstimatorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RankEstimator</servlet-name>
+        <url-pattern>/rankestimator</url-pattern>
+    </servlet-mapping>
+
+    <listener>
+        <listener-class>OfyHelper</listener-class>
+    </listener>
+
+
+    <filter>
+        <filter-name>ObjectifyFilter</filter-name>
+        <filter-class>com.googlecode.objectify.ObjectifyFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ObjectifyFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+</web-app>
