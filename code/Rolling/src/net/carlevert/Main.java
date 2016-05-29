@@ -1,7 +1,9 @@
 package net.carlevert;
 
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.OpenOption;
 import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.Stream;
@@ -10,11 +12,14 @@ public class Main {
 
     public final List<Double> dLines;
     public final List<Double> rolling;
-    public static final int WINDOW = 1000;
+    public static final int WINDOW = 8000;
 
-    public static String filename = "2Exp_a_23:07:18.csv";
+    public static String filename = "2Exp_b_23:07:18.csv";
+    public static String outFilename = "B" + WINDOW + ".csv";
 
     public Main(String filename) throws IOException {
+
+        BufferedWriter writer = Files.newBufferedWriter(Paths.get(outFilename));
 
         dLines = new ArrayList<>();
         Stream<String> lines = Files.lines(Paths.get(filename));
@@ -38,9 +43,9 @@ public class Main {
         }
 
         for (int i = 0; i < numLines; i++) {
-
-            if (i % 100 == 0)
-                System.out.println(dLines.get(i) + "\t" + rolling.get(i));
+            String out = dLines.get(i) + "\t" + rolling.get(i);
+                System.out.println(out);
+                writer.write(out + "\n");
         }
 
     }
@@ -48,13 +53,8 @@ public class Main {
     public static double averageQueue(Queue<Double> queue) {
         double sum = 0.0;
         Object[] theQueue = queue.toArray();
-        double[] dQueue = new double[theQueue.length];
         for (int i = 0; i < theQueue.length; i++)
-            dQueue[i] = (double) theQueue[i];
-
-        for (int i = 0; i < theQueue.length; i++) {
-            sum += dQueue[i];
-        }
+            sum += (double) theQueue[i];
         return sum / theQueue.length;
     }
 
