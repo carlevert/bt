@@ -1,12 +1,17 @@
 \chapter{Results}
 
-\begin{mdframed}[backgroundcolor=red,innerleftmargin=15pt,leftmargin=-10pt,rightmargin=-10pt, innerrightmargin=15pt,innertopmargin=10pt,innerbottommargin=10pt, fontcolor=white, skipabove=20pt, linewidth=0]
-  Since I'm still not completley not sure how to handle my results this chapter is a a bit too thinking-out-loudish. I need to devise some method to read the relative errors. Maybe some running averages? Linear regression around a number of points of the accumulated relative error to determine the current growth?
-\end{mdframed}
+In figure \ref{fig:rel-error-100000} the accumulated relative error for 100 000 highscore uppdates. The motivation for showing the accumulated error rather than just the relative error is that the plot of the accumulated relative error unveils the characteristics of the algorithms behaviours.
 
-The most interesting result from the experiements can be seen in the plot of the relative error for 100 000 highscore updates in figure \ref{fig:relerror}. The relative error seems to take off exponentially while the improved algorithm seems to produce consistent results after all updates.
+\begin{figure}[h!]
+  \centering
+  \caption{Accumulated relative error after 100 000 highscore updates. The dashed line is the original algorithm, the solid line is the improved algorithm.}
+  \label{fig:rel-error-100000}
+  \includegraphics[width=12cm]{img/rel-error-100000.eps}
+\end{figure}
 
-This may seem like good result.
+
+
+
 
 The hypothesis imply that the experiment should be done in three steps; one to find the size of the maximum error with the current configuration and a second step measuring how much longer the new algorithm can run before reaching the same error levels. Finally, third step would be comparing the cost of the two approaches.
 
@@ -17,13 +22,6 @@ The problem is defining the baseline error with the current implementation which
   \caption{Relative error for 100 000 highscore updates. Red line is the old algorithm, green line is the algorithm with dynamic bucket-table}
   \label{fig:relerror}
   \includegraphics[width=12cm]{img/relative}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \caption{Accumulated relative error for 4 000 highscore updates. Red line is the old algorithm, green line is the algorithm with dynamic bucket-table}
-  \label{fig:relerror4000}
-  \includegraphics[width=12cm]{img/acc-rel-error}
 \end{figure}
 
 \section{Execution time}

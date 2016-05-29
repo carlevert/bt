@@ -4,8 +4,6 @@
 
 The main purpose of the algorithms discussed below in this section is to answer the question \emph{Given a score, what is the rank of a user or item with this score?} \cite{codejam}. The opposite question -- \emph{Given a rank, what is the score for this rank?} is very similar but not adressed here directly even though most approaches to the ranking problem indirectly answers that question too.
 
-\todo{How to be more formal about this?}
-
 \section{\label{definition}What is ranking?}
 
 \begin{shaded}
@@ -167,7 +165,6 @@ The quality of the estimates made by this method depends on several factors.
 If an update of a highscore from a lower score to a higher occurs but the new score is within the the same bucket as the previous score, the subsequent estimate will be the same for any score since the bucket-table is unchanged. Because the underlying distribution is changed the error may be different but not necessarily worse.
 
 \todo{Illustration}
-\todo{This is not 100 \% correct}
 
 On the other hand, if a highscore estimate goes from a lower rank bucket to a higher one, a subsequent scan of the highscores would result in a table where the new bucket will grow by one and, start-rank of buckets after the new to and including the former one will increase by one and the bucket for the previous estimate would shrink by one.
 
@@ -184,7 +181,7 @@ Future highscore updates will add to the bucket-tables deviation from a theoreth
 
 \begin{figure}[h]
   \centering
-  \caption{Error in estimates will grow over time, until the bucket-table is recreated and the error level drops down to the initial error.
+  \caption{Error in estimates will grow over time, until the bucket-table is recreated and the error level drops down to the initial error. Bucket-table recreated at $t_0, t_1, t_2 \dots$. 
   }
   \label{fig:errortime}
   \includegraphics[width=13cm]{img/error-over-time.eps}

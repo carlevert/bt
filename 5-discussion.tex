@@ -7,3 +7,7 @@ There are however a bunch of parameters to play with in both cases, such as init
 There are at least two interesting paths to follow from here. First, the Company do not have a clear definition of what good enough ranking is. Their current rank estimates are obviously good enough but maybe even unnecessarily good with too frequent rebuilds of the bucket table. Secondly, optimizing the new implementation by utilizing a memory cache on a lower level would probably result in significant gains.
 
 
+\subsection{Technical details}
+
+The Companys original implementation of the ranking algorithm is written in Java and runs on Google App Engine and. So is this experiment. This is an overly complicated infrastructure to perform the experiments in as the same results could have been gained with a simple command-line interface application not communicating over HTTP at all. The choice is motivated by the initial ambitions that were a lot higher than the actual outcome.
+ 
