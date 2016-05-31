@@ -25,15 +25,18 @@ Define ordinal (each ordinal is the well-ordered set of all smaller ordinals?)
 
 Ranking algorithms can coarsely be divided in two categories: \emph{exact} and \emph{approximating} algorithms. The exact algorithms deal with the ranking problem by sorting and counting. The sorting part is commonly accomplished by indexing the score-property of the entity or the corresponding column in a table in case a relational database is used.  
 
+
+
 As mentioned in the introduction, obtaining an exact rank may not be necessary. Other considerations such as speed and cost may be more important. Approximating algorithms estimate the rank by linear interpolation within a segement of ranks. Suitable segments can be found with an \emph{offline-method} such as scanning all scores periodically keeping track of scores at the segments boundaries (See section \ref{bucket}) or with an \emph{online-method} with a \emph{streaming algorithm} that maintains a model for estimating ranks by continuosly updating a number of statistical measures.
 
 \subsubsection{Stability}
+\suna{Explain what stable mean}
 \todo{Consider removing 'Stability'}
 
 In both cases a sorted list needs to be created. If the chosen sorting algorithm is not stable the ranking will be non-deterministic. This may or may not be a problem depending on the application. 
 
 \todo{Strategies as in \href{https://en.wikipedia.org/wiki/Ranking\#Strategies\_for\_assigning\_rankings}{Ranking (Wikipedia)}?}
-
+\suna{In general to many subsections}
 \section{Exact algorithms}
 
 \subsection{Rank by counting}
@@ -74,8 +77,11 @@ Nevertheless, obtaining rank for a score by this method implies scanning through
 
 As described above, ranking is fundamentally a counting problem. One way to accomplish counting more efficiently is by storing the count of each score in an N-ary tree. Each non-leaf node defines a score range and its associated count and the leaves represents individual items from the value domain, ie discreete scores.
 
+\suna{Regarding O(n): for checking a rank one time}
+
 Score updates and getting the rank for a score with this algorithm has a time complexity of $\mathcal{O}(\log{} n)$. Since fetching or updating a node may be relatively expensive in case it has to be fetched from a database system the number of ranges per node needs to be chosen so that the height of the tree remains reasonable low\footnote{The Google Code Jam Ranking Library uses 100 buckets per node}. The height of the tree is $ceil(log_{rangesize}numscores)$.
 
+\suna{Not readable. What is 'value domain'}
 There are a number of things to consider with this approach. First, to get exact rankings the trees leaf nodes need to have as many children as there are possible scores. One way to get around that problem could be to not store individual scores but ranges. This could be done in at least two ways; by defining the ranges in beforehand or by compressing the tree at some interval so that if a childs score range has only a small frequency of its scores, then just dont build the tree further from that child. This is essentially the solution proposed by Shrivastava et al\cite{quantile_digest} with their Quantile Digest algorithm. The solution would then not be able to give exact ranks for scores.
 
 Also, the the score distribution need to be known or the tree need to adapt to the changing score distribution over time to get an optimal solution.
@@ -91,6 +97,8 @@ Also, the the score distribution need to be known or the tree need to adapt to t
 \todo{Maybe do a better conclusion of pros and cons? Maybe a list?}
 
 \section{Approximating algorithms}
+
+\suna{Define buckets}
 
 Getting an exakt rank for a score may not be crucial. One fairly obvious class of solutions is the ones using linear interpolation of rank within a score range with known ranks at the boundaries. The ranks and score ranges needed for the interpolation may be acquired in different ways of which two will be described in this chapter; Buckets with Global Query and Frugal Streaming.
 
@@ -155,7 +163,7 @@ A background job periodically scans all highscores, creating a table with entrie
 \end{table}
 
 The quality of the estimates made by this method depends on several factors.
-\textbf{The frequency of the periodic scans} needs to be high enough to keep the error of the estimate at an acceptable level. Also, \textbf{the size of the buckets} have an impact on the result. Yet another factor that cannot be handled in a simple way is when the score \textbf{distribution within a bucket is skewed} or simply not very linear within the score range as in figure \ref{fig:uneven}.
+\textbf{The frequency of the periodic scans} needs to be high enough to keep the error of the estimate at an acceptable level. Also, \textbf{the size of the buckets} have an impact on the result. Yet another factor that cannot be handled in a simple way is when the score \textbf{distribution within a bucket is skewed} or simply not uniform enough within the score range as in figure \ref{fig:uneven}.
 
 \begin{figure}[h!]
   \centering

@@ -35,7 +35,7 @@ The questions to researched in this thesis are
 \begin{enumerate}
   \setlength\itemsep{-0.4em}
 \item How to get a rank for a score efficiently and in near real time when the set of scores is large?
-\item Is it possible to improve the Bucket with Global Query algorithm?
+\item Can the Bucket with Global Query algorithm?
 \end{enumerate}
 
 To attend to the first question an overview of a few approaches to ranking will be provided in chapter \ref{ranking-algorithms}, starting by a naive approach derived from the definition of ranking, ending with a draft for a streaming and approximating approach. The algorithms presented in chapter \ref{ranking-algorithms} do certainly not represent a complete listing of all possible ways of solving the problem stated but will nevertheless provide some insight in the area.

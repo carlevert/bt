@@ -1,4 +1,4 @@
-\chapter{\label{method}Improving the Bucket with Global\\Query-algorithm}
+\chapter{\label{method}Improving the Bucket with Global Query-algorithm}
 
 \todo{This chapter have sections to be completed is apparently quite messy. Content-wise it is fairly complete.}
 
@@ -87,25 +87,22 @@ The execution time is measured by calls to \texttt{System.currentTimeInMillis()}
 
 The experiment is implemented in a client-server-model where the client simulate playing a game and sends highscores to the server. The server responds with an estimated rank and the execution time for processing the request. The client is a regular Java program with no bells and whistles and the server consists of a number of servlets designed to run on Google App Engine. 
 
-When the client has finnished ``playing'' a round it always get a new highscore, ie it always wins. The new highscore is better than the old one by a number drawn from a uniform pseudorandom distribution $1-1000$.
-
-To be able to measure the relative error of the estimates the client starts by asking for a list of all highscores. When the client sends a new highscore to the server it also updates its local highscore list. When the server responds with the rank estimate for the new score, that estimate is compared with the real rank and ultimately used for calculating the relative error.
+When the client has finished ``playing'' a round it always get a new highscore, ie it always wins. The new highscore is better than the old one by a number drawn from a uniform pseudorandom distribution $1-1000$.
+T
+o be able to measure the relative error of the estimates the client starts by asking for a list of all highscores. When the client sends a new highscore to the server it also updates its local highscore list. When the server responds with the rank estimate for the new score, that estimate is compared with the real rank and ultimately used for calculating the relative error.
 
 The type of ranking algorithm to use is set before starting the test.
 
+Two libraries are used in the project. \textbf{Objectify} provides means for persisting Java objects to the App Engines Datastore. By a few annotations
+\footnote{
+  \href
+      {https://docs.oracle.com/javase/tutorial/java/annotations/index.html}
+      {https://docs.oracle.com/javase/tutorial/java/annotations/index.html}
+}
+to the Java-class (\texttt{@Entity} on the class and \texttt{@Id} on the String or Long field that will be used for creating the key) objects can be saved with a statement like \texttt{ofy().save().entity(theObject)}. \textbf{Jackson} is a library for parsing JSON-data as well as mapping JSON to Java objects.
 
-\subsubsection{Libraries}
+\section{Limitations and ways of improving the experiment}
 
-A few libraries are used; \emph{Objectify} which provides means for persisting Java objects to the App Engines Datastore
-and \emph{Jackson} for parsing and generating JSON-data. Naturally, the App Engine SDK is also used.
+To be able to process the outcome of this experiment, several runs with different random seeds would make it possible to analyze the result with statistical methods.
 
-\todo{Make list and references}
-
-\section{Limitations}
-
-\todo{The real world data set grows over time. Will be ignored, only focus on case when the set of highscores are reasonably large.}
-
-\todo{Only tested on development server}
-
-\todo{Rest of chapter cut from introduction}
-
+The experiment is only run on a local development server. While there is no obvious reason to believe that the results and conclusions could be applied to a production environment in the cloud in principle, there may be factors that need to be considered.
