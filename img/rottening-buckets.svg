@@ -1,0 +1,2220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="425.19684"
+   height="425.19684"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="rottening-buckets.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="TriangleOutM"
+       style="overflow:visible">
+      <path
+         id="path3930"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.4)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Send"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Send"
+       style="overflow:visible;">
+      <path
+         id="path3818"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.3) rotate(180) translate(-2.3,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mstart"
+       style="overflow:visible">
+      <path
+         id="path3791"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.4) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;">
+      <path
+         id="path3794"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="DotM"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="DotM"
+       style="overflow:visible">
+      <path
+         id="path3849"
+         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.4) translate(7.4, 1)" />
+    </marker>
+    <marker
+       inkscape:stockid="DotS"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="DotS"
+       style="overflow:visible">
+      <path
+         id="path3852"
+         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.2) translate(7.4, 1)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path3785"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       inkscape:stockid="InfiniteLineStart"
+       id="InfiniteLineStart"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <g
+         id="g4029"
+         style="fill:#000000"
+         transform="translate(-13,0)">
+        <circle
+           d="M 3.8,0 C 3.8,0.44182781 3.4418278,0.80000001 3,0.80000001 2.5581722,0.80000001 2.2,0.44182781 2.2,0 c 0,-0.44182781 0.3581722,-0.80000001 0.8,-0.80000001 0.4418278,0 0.8,0.3581722 0.8,0.80000001 z"
+           id="circle4031"
+           r="0.8"
+           cy="0"
+           cx="3" />
+        <circle
+           d="M 7.3,0 C 7.3,0.44182781 6.9418278,0.80000001 6.5,0.80000001 6.0581722,0.80000001 5.7,0.44182781 5.7,0 c 0,-0.44182781 0.3581722,-0.80000001 0.8,-0.80000001 0.4418278,0 0.8,0.3581722 0.8,0.80000001 z"
+           id="circle4033"
+           r="0.8"
+           cy="0"
+           cx="6.5" />
+        <circle
+           d="M 10.8,0 C 10.8,0.44182781 10.441828,0.80000001 10,0.80000001 9.5581722,0.80000001 9.2,0.44182781 9.2,0 c 0,-0.44182781 0.3581722,-0.80000001 0.8,-0.80000001 0.441828,0 0.8,0.3581722 0.8,0.80000001 z"
+           id="circle4035"
+           r="0.8"
+           cy="0"
+           cx="10" />
+      </g>
+    </marker>
+    <marker
+       style="overflow:visible"
+       inkscape:stockid="InfiniteLineEnd"
+       id="InfiniteLineEnd"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <g
+         id="g4020"
+         style="fill:#000000">
+        <circle
+           id="circle4022"
+           r="0.8"
+           cy="0"
+           cx="3" />
+        <circle
+           id="circle4024"
+           r="0.8"
+           cy="0"
+           cx="6.5" />
+        <circle
+           id="circle4026"
+           r="0.8"
+           cy="0"
+           cx="10" />
+      </g>
+    </marker>
+    <marker
+       inkscape:stockid="DotM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="DotM-2"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3849-5"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.4,0,0,0.4,2.96,0.4)" />
+    </marker>
+    <marker
+       inkscape:stockid="DotM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker8140"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path8142"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.4,0,0,0.4,2.96,0.4)" />
+    </marker>
+    <marker
+       inkscape:stockid="DotM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker8144"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path8146"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.4,0,0,0.4,2.96,0.4)" />
+    </marker>
+    <marker
+       inkscape:stockid="DotM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="DotM-0"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3849-2"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.4,0,0,0.4,2.96,0.4)" />
+    </marker>
+    <marker
+       inkscape:stockid="DotM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="DotM-3"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3849-51"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.4,0,0,0.4,2.96,0.4)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.3180873"
+     inkscape:cx="235.04659"
+     inkscape:cy="215.64218"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="mm"
+     inkscape:snap-global="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1908"
+     inkscape:window-height="1187"
+     inkscape:window-x="346"
+     inkscape:window-y="113"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2987"
+       empspacing="1"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       units="mm"
+       spacingx="1mm"
+       spacingy="1mm"
+       dotted="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-627.16535)">
+    <rect
+       style="fill:#ffffff;stroke-width:0.53149605;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect5405"
+       width="425.19684"
+       height="7.0866141"
+       x="6.4373016e-06"
+       y="892.91339" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3823"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3825"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3831"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3833"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3839"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3841"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-8.0829915,983.21192)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3843"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-8.0829915,983.21192)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3849"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-8.0829915,983.21192)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3851"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3853"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-8.0829915,983.21192)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3855"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-8.0829915,983.21192)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3857"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-8.0829915,983.21192)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3859"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3865"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3867"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3873"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3875"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,955.17541)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3877"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,955.17541)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3883"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,955.17541)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3885"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3887"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,955.17541)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3889"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,955.17541)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3891"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,955.17541)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3893"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3899"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3901"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3907"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3909"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,927.64806)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3911"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,927.64806)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3917"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,927.64806)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3919"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3921"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,927.64806)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3923"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,927.64806)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3925"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,927.64806)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3927"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3933"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3935"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3941"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3943"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,899.61103)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3945"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,899.61103)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3951"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,899.61103)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3953"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3955"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,899.61103)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3957"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,899.61103)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3959"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,899.61103)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3961"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3967"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3969"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3975"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3977"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,871.574)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3979"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,871.574)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3985"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,871.574)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3987"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3989"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,871.574)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3991"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,871.574)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3993"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-13.721571,871.574)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g3995"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4001"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4003"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4009"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4011"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,843.53699)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4013"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,843.53699)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4019"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,843.53699)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4021"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4023"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,843.53699)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4025"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,843.53699)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4027"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,843.53699)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4029-5"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4035"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4037"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4043"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4045"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,816.00966)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4047"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,816.00966)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4053"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,816.00966)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4055"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4057"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,816.00966)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4059"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,816.00966)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4061"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,816.00966)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4063"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4069"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4071"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4077"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4079"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,787.97288)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4081"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,787.97288)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4087"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,787.97288)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4089"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4091"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,787.97288)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4093"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,787.97288)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4095"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,787.97288)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4097"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4103"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4105"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4111"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4113"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,759.93591)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4115"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,759.93591)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4121"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,759.93591)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4123"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4125"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,759.93591)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4127"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,759.93591)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4129"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-19.360151,759.93591)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4131"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4137"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4139"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4145"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4147"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,4.6038479,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4149"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,4.6038479,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4155"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,4.6038479,989.83901)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4157"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4159"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,4.6038479,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4161"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,4.6038479,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4163"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,4.6038479,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4165"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4171"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4173"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4179"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4181"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,32.796749,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4183"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,32.796749,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4189"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,32.796749,989.83901)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4191"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4193"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,32.796749,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4195"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,32.796749,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4197"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,32.796749,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4199"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4205"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4207"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4213"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4215"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,72.971329,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4217"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,72.971329,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4223"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,72.971329,989.83901)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4225"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4227"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,72.971329,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4229"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,72.971329,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4231"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,72.971329,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4233"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4239"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4241"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4247"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4249"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,112.44139,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4251"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,112.44139,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4257"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,112.44139,989.83901)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4259"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4261"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,112.44139,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4263"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,112.44139,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4265"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,112.44139,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4267"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4273"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4275"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4281"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4283"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,152.61688,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4285"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,152.61688,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4291"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,152.61688,989.83901)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4293"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4295"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,152.61688,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4297"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,152.61688,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4299"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,152.61688,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4301"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4307"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4309"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4315"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4317"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,192.08694,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4319"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,192.08694,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4325"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,192.08694,989.83901)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4327"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4329"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,192.08694,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4331"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,192.08694,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4333"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,192.08694,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4335"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4341"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4343"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4349"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4351"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,231.5563,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4353"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,231.5563,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4359"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,231.5563,989.83901)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4361"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4363"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,231.5563,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4365"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,231.5563,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4367"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,231.5563,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4369"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4375"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4377"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4383"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4385"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,271.73179,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4387"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,271.73179,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4393"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,271.73179,989.83901)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4395"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4397"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,271.73179,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4399"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,271.73179,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4401"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,271.73179,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4403"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4409"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4411"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4417"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4419"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,311.20185,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4421"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,311.20185,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4427"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,311.20185,989.83901)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4429"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4431"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,311.20185,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4433"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,311.20185,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4435"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,311.20185,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4437"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4443"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4445"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4451"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4453"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,351.37664,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4455"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,351.37664,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4461"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,351.37664,989.83901)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4463"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4465"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,351.37664,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4467"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,351.37664,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4469"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,351.37664,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4471"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4477"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4479"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4485"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4487"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,388.02706,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4489"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,388.02706,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4495"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,388.02706,989.83901)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4497"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4499"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,388.02706,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4501"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,388.02706,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4503"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,388.02706,989.83901)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4505"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4511"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4513"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,246.35783,766.05306)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4515"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,246.35783,766.05306)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4521"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,246.35783,766.05306)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4523"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4525"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,246.35783,766.05306)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4527"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,246.35783,766.05306)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4529"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,246.35783,766.05306)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4531"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4537"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4539"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4541"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4543"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4549"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4551"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,246.35783,772.68001)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4553"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,246.35783,772.68001)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4559"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,246.35783,772.68001)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4561"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4563"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,246.35783,772.68001)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4565"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,246.35783,772.68001)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4567"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,246.35783,772.68001)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4569"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4575"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4577"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4579"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4581"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4587"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4589"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.88669414;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4595"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5"
+       transform="matrix(0.70482599,0,0,0.50976558,-24.998731,757.3871)" />
+    <g
+       transform="matrix(0.70262677,0,0,0.50817499,-24.998731,757.3871)"
+       style="font-size:10.50000000000000000px;font-style:normal;font-weight:400;fill:none;stroke:#000000;stroke-width:0.8894695;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;font-family:Segoe UI;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4597"
+       font-style="normal"
+       font-weight="400"
+       font-size="10.5" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot7670"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Times New Roman;font-style:normal;font-weight:normal;font-size:10px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'Times New Roman,';font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr"><flowRegion
+         id="flowRegion7672"><rect
+           id="rect7674"
+           width="50.547504"
+           height="64.554642"
+           x="-22.533224"
+           y="109.1227" /></flowRegion><flowPara
+         id="flowPara7676" /></flowRoot>    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="156.77303"
+       y="483.48889"
+       id="text7707"
+       sodipodi:linespacing="125%"
+       transform="translate(0,627.16535)"><tspan
+         sodipodi:role="line"
+         id="tspan7709"
+         x="156.77303"
+         y="483.48889" /></text>
+    <g
+       id="g9632">
+      <g
+         transform="translate(0,-5.6732877)"
+         id="g9566">
+        <path
+           sodipodi:type="arc"
+           style="fill:none;stroke:#000000;stroke-width:0.71935225;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           id="path9471"
+           sodipodi:cx="88.069778"
+           sodipodi:cy="221.40747"
+           sodipodi:rx="41.986752"
+           sodipodi:ry="9.2166042"
+           d="m 130.05653,221.40747 c 0,5.09019 -18.79811,9.2166 -41.986752,9.2166 -23.188642,0 -41.986751,-4.12641 -41.986751,-9.2166 0,-5.09019 18.798109,-9.2166 41.986751,-9.2166 23.188642,0 41.986752,4.12641 41.986752,9.2166 z"
+           transform="matrix(0.97049736,0,0,1,-9.290385,515.60039)" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 35.433071,109.84251 0,63.77953"
+           id="path9543"
+           inkscape:connector-curvature="0"
+           transform="translate(0,627.16535)" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 116.92913,109.84251 0,63.77953"
+           id="path9545"
+           inkscape:connector-curvature="0"
+           transform="translate(0,627.16535)" />
+        <path
+           transform="matrix(0.97049736,0,0,1,-9.2903851,579.37991)"
+           style="fill:none;stroke:#000000;stroke-width:0.71935225;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           d="m 130.05653,221.40747 c 0,5.09019 -18.79811,9.2166 -41.986752,9.2166 -23.188642,0 -41.986751,-4.12641 -41.986751,-9.2166"
+           id="path9471-4"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="csc" />
+      </g>
+      <g
+         id="g9566-1"
+         transform="translate(197.24408,-5.6732877)">
+        <path
+           sodipodi:type="arc"
+           style="fill:none;stroke:#000000;stroke-width:0.71935225;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           id="path9471-2"
+           sodipodi:cx="88.069778"
+           sodipodi:cy="221.40747"
+           sodipodi:rx="41.986752"
+           sodipodi:ry="9.2166042"
+           d="m 130.05653,221.40747 c 0,5.09019 -18.79811,9.2166 -41.986752,9.2166 -23.188642,0 -41.986751,-4.12641 -41.986751,-9.2166 0,-5.09019 18.798109,-9.2166 41.986751,-9.2166 23.188642,0 41.986752,4.12641 41.986752,9.2166 z"
+           transform="matrix(0.97049736,0,0,1,-9.290385,515.60039)" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 35.433071,109.84251 0,63.77953"
+           id="path9543-7"
+           inkscape:connector-curvature="0"
+           transform="translate(0,627.16535)" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 116.92913,109.84251 0,63.77953"
+           id="path9545-4"
+           inkscape:connector-curvature="0"
+           transform="translate(0,627.16535)" />
+        <path
+           transform="matrix(0.97049736,0,0,1,-9.2903851,579.37991)"
+           style="fill:none;stroke:#000000;stroke-width:0.71935225;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           d="m 130.05653,221.40747 c 0,5.09019 -18.79811,9.2166 -41.986752,9.2166 -23.188642,0 -41.986751,-4.12641 -41.986751,-9.2166"
+           id="path9471-4-5"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="csc" />
+      </g>
+      <g
+         id="g9566-9"
+         transform="translate(295.86614,-5.6732877)">
+        <path
+           sodipodi:type="arc"
+           style="fill:none;stroke:#000000;stroke-width:0.71935225;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           id="path9471-8"
+           sodipodi:cx="88.069778"
+           sodipodi:cy="221.40747"
+           sodipodi:rx="41.986752"
+           sodipodi:ry="9.2166042"
+           d="m 130.05653,221.40747 c 0,5.09019 -18.79811,9.2166 -41.986752,9.2166 -23.188642,0 -41.986751,-4.12641 -41.986751,-9.2166 0,-5.09019 18.798109,-9.2166 41.986751,-9.2166 23.188642,0 41.986752,4.12641 41.986752,9.2166 z"
+           transform="matrix(0.97049736,0,0,1,-9.290385,515.60039)" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 35.433071,109.84251 0,63.77953"
+           id="path9543-3"
+           inkscape:connector-curvature="0"
+           transform="translate(0,627.16535)" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 116.92913,109.84251 0,63.77953"
+           id="path9545-1"
+           inkscape:connector-curvature="0"
+           transform="translate(0,627.16535)" />
+        <path
+           transform="matrix(0.97049736,0,0,1,-9.2903851,579.37991)"
+           style="fill:none;stroke:#000000;stroke-width:0.71935225;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           d="m 130.05653,221.40747 c 0,5.09019 -18.79811,9.2166 -41.986752,9.2166 -23.188642,0 -41.986751,-4.12641 -41.986751,-9.2166"
+           id="path9471-4-6"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="csc" />
+      </g>
+      <g
+         id="g9566-2"
+         transform="translate(98.622052,-5.6732877)">
+        <path
+           sodipodi:type="arc"
+           style="fill:none;stroke:#000000;stroke-width:0.71935225;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           id="path9471-6"
+           sodipodi:cx="88.069778"
+           sodipodi:cy="221.40747"
+           sodipodi:rx="41.986752"
+           sodipodi:ry="9.2166042"
+           d="m 130.05653,221.40747 c 0,5.09019 -18.79811,9.2166 -41.986752,9.2166 -23.188642,0 -41.986751,-4.12641 -41.986751,-9.2166 0,-5.09019 18.798109,-9.2166 41.986751,-9.2166 23.188642,0 41.986752,4.12641 41.986752,9.2166 z"
+           transform="matrix(0.97049736,0,0,1,-9.290385,515.60039)" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 35.433071,109.84251 0,63.77953"
+           id="path9543-74"
+           inkscape:connector-curvature="0"
+           transform="translate(0,627.16535)" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 116.92913,109.84251 0,63.77953"
+           id="path9545-3"
+           inkscape:connector-curvature="0"
+           transform="translate(0,627.16535)" />
+        <path
+           transform="matrix(0.97049736,0,0,1,-9.2903851,579.37991)"
+           style="fill:none;stroke:#000000;stroke-width:0.71935225;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           d="m 130.05653,221.40747 c 0,5.09019 -18.79811,9.2166 -41.986752,9.2166 -23.188642,0 -41.986751,-4.12641 -41.986751,-9.2166"
+           id="path9471-4-8"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="csc" />
+      </g>
+    </g>
+  </g>
+</svg>

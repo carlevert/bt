@@ -18,6 +18,8 @@
 \usepackage{cleveref}
 \usepackage{nameref}
 \usepackage{csquotes}
+\usepackage{siunitx}
+
 \SetBlockThreshold{1} 
 
 
@@ -88,6 +90,11 @@
 
 
 
+\newcommand{\hhref}[1] {
+  \href{#1}{#1}
+}
+
+
 \newcommand{\todo}[1] {
   \begin{mdframed}[style=todostyle]
     \textbf{TODO} #1
@@ -115,12 +122,12 @@
 
 \begin{document}
 
-% \maketitle
+\maketitle
 
 \cleardoublepage
 
-% \input{0-abstract}
-% \input{0-acknowledgements} 
+\input{0-abstract}
+\input{0-acknowledgements} 
  
 \tableofcontents
 \cleardoublepage
@@ -142,9 +149,9 @@
 
 \appendix
 
-\input{frugal}
+% \input{frugal}
 
-\input{source-code}
+% \input{source-code}
 
 % \chapter{First Appendix}
 

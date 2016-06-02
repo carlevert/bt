@@ -1,13 +1,38 @@
-\chapter{Conclusion and Future Directions}
+\chapter{\label{discussion}Discussion and future directions}
 
-From the results in the previous chapter it is clear (somewhat clear) that the improved ranking algorithm with dynamic buckets perform better with the current settings of the experiment.
+For the length of the experiment the relative error for the solution with the dynamic bucket-table remains practically constant\footnote{Linear regression gives that it is actually \emph{decreasing} with the data set used, albeit by a modest $-10^{-11}$ per highscore update.} Because the buckets for the higher ranks will grow in size (highscores always improve when updated), the approximations will get less accurate over time. The experiments were not run long enough to tell when the bucket-table would need to be recreated in the dynamic approach.
 
-There are however a bunch of parameters to play with in both cases, such as initial bucket sizes when it comes to tuning the algorithm itself and the distribution of the initial highscores as well as the distribution of the highscores generated during the test.
-
-There are at least two interesting paths to follow from here. First, the Company do not have a clear definition of what good enough ranking is. Their current rank estimates are obviously good enough but maybe even unnecessarily good with too frequent rebuilds of the bucket table. Secondly, optimizing the new implementation by utilizing a memory cache on a lower level would probably result in significant gains.
+While the data gained does not tell when the bucket-table would need to be recreated we can still assume that it would last for 100 000 updates.
 
 
-\subsection{Technical details}
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\vspace{4mm}
+\begin{tabular}{l|c|cccc}
 
-The Companys original implementation of the ranking algorithm is written in Java and runs on Google App Engine and. So is this experiment. This is an overly complicated infrastructure to perform the experiments in as the same results could have been gained with a simple command-line interface application not communicating over HTTP at all. The choice is motivated by the initial ambitions that were a lot higher than the actual outcome.
- 
+           & Dynamic                    & \multicolumn{4}{c}{Static}                                                       \\ \hline 
+Recreate table every           & 100 000 & 5 000 & 10 000 & 15 000 & 20 000 \\
+Num bucket-table creations     & 1                          & 20                       & 10                        & 7                         & 5                         \\ \hline
+CPU-time bucket-table creation & 10.25                     & 204.1                    & 102.1                    & 71.44                    & 51.03                    \\
+CPU-time approximations        & 760                    & 591 & 591 &591&591                      \\ \hline
+Total time (s)                 & 771                    & 796                    & 693                    & 663                   & 642                  
+\end{tabular}
+\vspace{4mm}
+\end{table}
+
+What an acceptable error level would be is a question that ultimately needs to be answered by stakeholders in charge of the application the rank approximations are used in. However, having a mean realative error of 0.05 \% when approximating a rank at position 30 000 means having an error in absolute ranks of 15 and could hardly be considered not precise enough in a computer game.
+
+
+\section*{Next up}
+
+There are a number of interesting paths to follow from here and the number one and two priorities should be to perform the experiment on a real platform and doing the experiments with different random seeds.
+
+Also, there are a lot of parameters that could be tweeked, such as properties of the distribution of the initial highscores and the new highscores, as well as the distribution of the players actually playing. The impact of the size of the buckets is not investigated at all in this thesis.
+
+Optimizing the new implementation by utilizing the memory cache available in Google App Engine directly in the ranking function instead of relying on the cache functionality built into Objectify would probably result in significant performance gains.
+
+\vspace{20mm}
+\textbf{\Huge
+\texttt{\^}\texttt{D}}
