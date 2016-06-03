@@ -1,17 +1,21 @@
 \chapter{\label{frugal-alg}Frugal streaming}
 
 
-% Algorithm 2 Frugal-1U
+\section*{Algorithm Frugal-1U}
 
-% Input: Data stream S, h, k, 1 unit of memory m
-% Output: m
+Input: Data stream S, h, k, 1 unit of memory m
 
-% 1: Initialization m = 0
-% 2: for each s_i in S do
-% 3:   rand = random(0,1); // get a random value in [0,1]
-% 4:   if s_i > m and rand > 1 − h/k then
-% 5:      m = m + 1;
-% 6:   else if s_i < m and rand > h/k then
-% 7:      m = m − 1;
-% 8:   end if
-% 9: end for
+Output: m
+
+\iffalse 
+1: Initialization m = 0
+2: for each s\_{i} in S do
+3:   rand = random(0,1); // get a random value in [0,1]
+4:   if s_{i} > m and rand > 1 - h/k then
+5:      m = m + 1;
+6:   else if s\_{i} < m and rand > h/k then
+7:      m = m - 1;
+8:   end if
+9: end for
+
+\fi

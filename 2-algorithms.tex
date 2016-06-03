@@ -81,6 +81,7 @@ The bucket-table is created by iterating through the whole, sorted set of highsc
 
 \begin{table}[h]
   \begin{center}
+    \vspace{4mm}
   \begin{tabular}{ c c c c }
     Bucket no & Start score & Start rank & Size \\
     5 & 1 515 & 83 & 22 \\ 
@@ -140,47 +141,21 @@ Future highscore updates will add to the bucket-tables deviation from a theoreth
   \label{fig:errortime}
   \includegraphics[width=13cm]{img/error-over-time.eps}
 \end{figure}
-
+\newpage
 
 \subsection{\label{frugal}Online approaches, streaming algorithms}
 
-\todo{}
+\emph{Frugal Streaming}\cite{frugal_streaming} is an algorithm for continuosly estimating quantiles from a stream. It is an online and streaming algorithm, meaning that it ``can process its input piece-by-piece in a serial fashion''\footnote{\hhref{https://en.wikipedia.org/wiki/Online\_algorithm}} and that it is ``only allowed to access the input in \emph{streaming fashion}''\footnote{\href{http://www.cs.dartmouth.edu/\~ac/Teach/CS49-Fall11/Notes/lecnotes.pdf}{CS49: Data Stream Algorithms - Lecture Notes Fall 2011, Amit Chakarabarti\\http://www.cs.dartmouth.edu/\~ac/Teach/CS49-Fall11/Notes/lecnotes.pdf}\label{fn}} and ``does not have random access to the tokens''. The algorithm is short and straightforward and can be studied in Appendix \ref{frugal-alg}.
 
-\iffalse
+Assume we know the number of highscores, $n$. By using the Frugal Streaming algorithm on the incoming highscores we also know at least two quantiles, for example $q_{25\%}$ and $q_{50\%}$ that are marked in Figure \ref{fig:frugal1}. At $q_{25\%}$ we have the highest score \mbox{25 \%} of the lowest ranked players (or lowest score of the other 75 \%). The same reasonings apply to quartile $q_{50\%}$, $\frac{n}{2}$ players have a lower score and $\frac{n}{2}$ have a higher score (For the moment, the possibility of an odd number of highscores is ignored).
 
-\begin{mdframed}[backgroundcolor=red,innerleftmargin=15pt,leftmargin=-10pt,rightmargin=-10pt, innerrightmargin=15pt,innertopmargin=10pt,innerbottommargin=10pt, fontcolor=white, skipabove=20pt, linewidth=0]
-  
-  \textbf{The rest of the chapter is not really comprehendable in its current state. I intend to finnish this section later.}
-  
-\end{mdframed}
+\begin{figure}[h!]
+  \centering
+  \caption{Distribution of highscores with quantiles $q_{0\%}$ $q_{25\%}$ and $q_{50\%}$ marked.}
+  \label{fig:frugal1}
+  \includegraphics[width=13cm]{img/frugal1.eps}
+\end{figure}
 
-The drawback with the method described above is that the bucket-table after some time will no longer represent the actual distribution of scores and consequently less and less accurate rankings.
+Since we have the ranks and estimate of the score at the two quantiles we can do linear interpolation between our quantiles. For example, at $q_{25\%}$ the rank is $(1 - 0.25) \times n$, 75 \% of all players have a higher score) and the score is the output of running the Frugal Streaming algorithm for those quantiles.
 
-An alternative but still similar way of solving the problem could be by estimating a number of quantiles of the distribution of highscores by using a streaming algorithm. 
-
-\emph{Frugal streaming} is a streaming streaming algorithm for estimating a quantile of a stream devised by Ma, Muthukrishnan and Sandler. \cite{frugal_streaming} The algorithm itself is fairly self explanatory (see appendix \ref{frugal}) and have a small memory footprint.
-
-The idea is that by calculating a number of quantiles for every new highscore while keeping track of the total number of highscores you could create a bucket-table as in the algorithm described in section \ref{bucket}.
-
-Calculating exact quantiles of a large dataset is quite expensive.
-
-\subsection{Quantile Digest}
-
-\emph{Quantile Digest} is a tree based stream summary algorithm. The paper that describes the algorithm does it from a sensor network perspective 
-The algorithm builds a binary tree of the value domain. The tree is then compressed and can be sent to the parent of the sensor. The compression is lossy such that less frequent values are represented as a bucket. The result of the compression is called Quantile Digest.
-
-Quantile query - inverse quantile
-
-\blockquote{
-
-Inverse Quantile: Given a value x, determine its
-rank in the sorted sequence of the input values.
-175
-In this case, we again make the same sorted list (L),
-and traverse it from beginning to end. We report the
-sum of counts of buckets $v$ for which $x > v.max$ as
-the rank of x. The reported rank is between rank(x)
-and rank(x) + $\varepsilon$, $rank(x)$ being the actual rank of
-$x$.}
-
-\fi
+A drawback with this procedure is that every single new highscore would result in running the Frugal Streaming algorithm as many times as the number of quantiles needed to make precise enough approximations. Also, it needs some time to stabilize so it cannot be used from the absolute beginning when there are only a few highscores.
