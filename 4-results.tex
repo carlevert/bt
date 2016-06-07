@@ -13,14 +13,15 @@ Figure \ref{fig:rel-error-100000} shows the absolute value of the relative error
   \includegraphics[width=13cm]{img/rel-error-100000.eps}
 \end{figure}
 
-Figure \ref{fig:rel-error-10000} is a plot of the same relative error but for approximations 1 -- 10 000. It shows where the difference between the two algorithms starts to be significant. At $t_1$, the relative error for the original algorithm is at its maximum in the range 1 -- 4000, also slightly higher for the algorithm with dynamic buckets. Also, the relative error is practically the same after 4 000 updates. At $t_2$ the relative error exceeds the largest relative error with the original algorithm\footnote{The results would not be exactly the same if the experiment had been run a number of times with different random seeds to create an average relative error. This is also the reason for causing ambiguity by not specifying $t_1$ and $t_2$ exactly.}.
+Figure \ref{fig:rel-error-10000} is a plot of the same relative error but for approximations 1 -- 10 000. It shows where the difference between the two algorithms starts to be significant. The relative error is practically the same after 4 000 updates, after that the original algorithm starts to deviate noticeably\footnote{The results would not be exactly the same if the experiment had been run a number of times with different random seeds to create an average relative error. This is also the reason for causing ambiguity by not specifying $t_1$ and $t_2$ exactly.}.
+
 
 
 \begin{table}[h]
   \vspace{4mm}
   \begin{center}
     \begin{tabular}{ r | c c c c c }
-      Approx n ($\times 1000$) & {[}1-20)           & {[}20-40) & {[}40-60) & {[}60-80) & {[}80-100)    \\ \hline
+      Approx $n$ ($\times 1000$) & {[}1-20)           & {[}20-40) & {[}40-60) & {[}60-80) & {[}80-100)    \\ \hline
                 Mean               & 0.07    & 0.11     & 0.16     & 0.21     & 0.25   \\
                 Median             & 0.03    & 0.04     & 0.05     & 0.06     & 0.08   \\
                 Standard Deviation & 0.19    & 0.43     & 0.64     & 0.86     & 0.96   \\
@@ -32,11 +33,20 @@ Figure \ref{fig:rel-error-10000} is a plot of the same relative error but for ap
   \end{center} 
 \end{table}
 
+
+\begin{figure}[h!]
+  \centering
+  \caption{Relative error for 10 000 highscore updates.}
+  \label{fig:rel-error-10000}
+  \includegraphics[width=13cm]{img/rel-error-10000.eps}
+\end{figure}
+
+
 \begin{table}[h]
   \vspace{4mm}
   \begin{center}
     \begin{tabular}{ r | c c c c c }
-      Approx n ($\times 1000$) & {[}1-20)           & {[}20-40) & {[}40-60) & {[}60-80) & {[}80-100)    \\ \hline               
+      Approx $n$ ($\times 1000$) & {[}1-20)           & {[}20-40) & {[}40-60) & {[}60-80) & {[}80-100)    \\ \hline               
                 Mean               & 0.06    & 0.05    & 0.05    & 0.05     & 0.05 \\
                 Median             & 0.03    & 0.03    & 0.03    & 0.03     & 0.02 \\
                 Standard Deviation & 0.14    & 0.11    & 0.12    & 0.12     & 0.13 \\
@@ -46,14 +56,7 @@ Figure \ref{fig:rel-error-10000} is a plot of the same relative error but for ap
     \label{table:results-b}
   \end{center} 
 \end{table}
-
-\begin{figure}[h!]
-  \centering
-  \caption{Relative error for 10 000 highscore updates.}
-  \label{fig:rel-error-10000}
-  \includegraphics[width=13cm]{img/rel-error-10000.eps}
-\end{figure}
-
+\newpage
 \section{Execution time}
 
 The execution time is measured on a local development server and not on the cloud platform targeted. The local development server is an Intel Core i7-6700K with 16 GB of RAM which at the time of writing has the fastest single-thread performance available. The virtual machines (instances) provided by Google App Engine are far less powerful. For example, the least powerful instance have CPU-limit corresponding to 600 MHz on an unspecified architecture and 128 MB of RAM\footnote{\hhref{https://cloud.google.com/appengine/docs/about-the-standard-environment\#instance\_classes}}. No measurements have been done to determine what kind of scaling factor would apply when translating the results to a production environment.

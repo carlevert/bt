@@ -4,7 +4,7 @@ The main purpose of the algorithms discussed below in this section is to answer 
 
 Ranking algorithms can coarsely be divided in two categories: \emph{exact} and \emph{approximating} algorithms. The exact algorithms deal with the ranking problem by sorting and counting the number of users having a better score than the new score. If it is not neccessary to obtain an exact rank or other factors such as speed or cost have to be considered an approximating algorithm can be a good compromise.
 
-Approximating algorithms estimate the rank by interpolation within a segement of ranks. Suitable segments can be found with an \emph{offline-method} such as scanning all scores periodically, keeping track of scores at the segments boundaries (See section \ref{bucket}) or with an \emph{online-method} with a \emph{streaming algorithm} that maintains a model for estimating ranks by continuosly updating a number of statistical measures.
+Approximating algorithms estimate the rank by interpolation within a segement of ranks. Suitable segments can be found with an \emph{offline-method} such as scanning all scores periodically, keeping track of scores at the segments boundaries (See Section \ref{bucket}) or with an \emph{online-method} with a \emph{streaming algorithm} that maintains a model for estimating ranks by continuosly updating a number of statistical measures.
 
 \section{\label{counting}Rank by counting}
 
@@ -17,26 +17,27 @@ Obtaining rank for a score by this method implies scanning through all items hav
 
 One way to accomplish counting more efficiently is by storing the count of each score in an N-ary tree. \emph{N} is the maximum number of childrens a node can have. Each node defines $N$ score ranges or $N$ single scores along with their associated count. The leaves represents individual items from the domain of possible scores. The rank for a score is obtained by summing the number of better scores and adding one. An example is provided in Figure \ref{fig:tree}. Updating a score by this approach also implies updating the count in each node visited.
 
-The time complexity of finding a rank in the tree is $\mathcal{O}(\log{} n)$ where $n$ is the number of possible scores. The height of the tree is $\lceil log_{N}n \rceil$. Reading or writing a node may be expensive in case it has to be read from or written to a database system, hence the number of ranges per node needs to be chosen so that the height of the tree remains reasonably low. What would be considered as \emph{reasonably low} depends on details of the implementation such as the cost for database operations, the cost for CPU-time etc. 
+The time complexity of finding a rank in the tree is $\mathcal{O}(\log{} n)$ where $n$ is the number of possible scores. The height of the tree is $log_{N}n$. Reading or writing a node may be expensive in case it has to be read from or written to a database system, hence the number of ranges per node needs to be chosen so that the height of the tree remains reasonably low. What would be considered as \emph{reasonably low} depends on details of the implementation such as the cost for database operations, the cost for CPU-time etc. 
 
 There are a number of things to consider with this approach. First, to get exact rankings the leaf nodes will be as many as there are distinct scores. This may be a problem if the range of scores is open in one or both directions. One way to get around that problem could be to not store the count of individual scores but instead count of ranges. This could be done in at least two ways; by defining the ranges in beforehand or by compressing the tree at some interval so that if a childs' score range has only a small number of scores, then do not build the tree further down from that child. That is essentially the solution proposed by Shrivastava et al\cite{quantile_digest} with their Quantile Digest algorithm. A ranking algortihm based on that solution would then not be able to give exact ranks for scores, but have to do approximations. Secondly, if the scores distribution is not known in beforehand the tree may need to be balanced during it's lifetime in order for this class of alghorithms to be efficient.
 
 \begin{figure}[h!]
   \centering
-  \caption{Example of how ranking is done using a tree-based approach. To get the rank for score 30, start by adding the counts for scores greater than 30. There is 22 higher scores and rank for score 30 is thus 23.\\This figure is a reproduction of a similar image from the article \emph{Fast and Reliable Ranking in Datastore} \cite{ranking-in-datastore}, licensed under the Creative Commons Attribution 3.0 License}   \label{fig:tree}
+  \caption{
+    Example of how ranking is done using a tree-based approach. To get the rank for score 30, start by adding the counts for scores greater than 30 (numbers inside circles). There is 22 higher scores and rank for score 30 is thus 23.\\This figure is a reproduction of a similar image from the article \emph{Fast and Reliable Ranking in Datastore} (https://cloud.google.com/datastore/docs/articles/fast-and-reliable-ranking-in-datastore/), licensed under the Creative Commons Attribution 3.0 licence.}\label{fig:tree}
 \hbox{\hspace{-0.8cm}
   \includegraphics[width=15cm]{img/tree.eps}}
 \end{figure}
 
 \section{Rank by approximation with linear interpolation}
 
-Getting an exakt rank for a score may not be crucial. One class of solutions is the ones using linear interpolation to get an approximate rank from a score range and known ranks at the lowest and highest scores. The ranks and score ranges needed for the interpolation can be acquired in different ways of which two will be described shortly: \emph{Buckets with Global Query} and \emph{Frugal Streaming}.
+Getting an exact rank for a score may not be crucial. One class of solutions is the ones using linear interpolation to get an approximate rank from a score range and known ranks at the lowest and highest scores. The ranks and score ranges needed for the interpolation can be acquired in different ways of which two will be described shortly: \emph{Buckets with Global Query} and \emph{Frugal Streaming}.
 
 Approximating algorithms will almost by definition deviate from the \emph{true value} and we need a way to express that deviation. One way could be expressing the error as the \emph{absolute error} as in. \ref{abs-error} \cite{pohl}.  
 
 \begin{equation}
   \label{abs-error}
-  \varepsilon_{abs} = x_0 - x = \frac{\Delta x}{x} 
+  \varepsilon_{abs} = x_0 - x = \Delta x
 \end{equation}
 
 In \ref{abs-error} $x$ is the true value and $x_0$ is in this case our approximated value. Another option would be expressing the error as the \emph{relative error} which is the quota between the absolute error and the true value \cite{pohl}.
@@ -123,7 +124,7 @@ When a highscore update occurs, from a lower score to a higher, but the new scor
 
 On the other hand, if a new highscore estimate goes from a lower rank bucket to a higher one, a subsequent scan of the highscores would result in a table where the new bucket will grow by one and, start-rank of buckets after the new bucket to and including the former one will increase by one and the bucket for the previous estimate would shrink by one.
 
-\todo{Illustration}
+% \todo{Illustration}
 
 % \begin{figure}[h]
 %  \centering
@@ -145,7 +146,8 @@ Future highscore updates will add to the bucket-tables deviation from a theoreth
 
 \subsection{\label{frugal}Online approaches, streaming algorithms}
 
-\emph{Frugal Streaming}\cite{frugal_streaming} is an algorithm for continuosly estimating quantiles from a stream. It is an online and streaming algorithm, meaning that it ``can process its input piece-by-piece in a serial fashion''\footnote{\hhref{https://en.wikipedia.org/wiki/Online\_algorithm}} and that it is ``only allowed to access the input in \emph{streaming fashion}''\footnote{\href{http://www.cs.dartmouth.edu/\~ac/Teach/CS49-Fall11/Notes/lecnotes.pdf}{CS49: Data Stream Algorithms - Lecture Notes Fall 2011, Amit Chakarabarti\\http://www.cs.dartmouth.edu/\~ac/Teach/CS49-Fall11/Notes/lecnotes.pdf}\label{fn}} and ``does not have random access to the tokens''. The algorithm is short and straightforward and can be studied in Appendix \ref{frugal-alg}.
+\emph{Frugal Streaming}\cite{frugal_streaming} is an algorithm for continuosly estimating quantiles from a stream. It is an online and streaming algorithm, meaning that it ``can process its input piece-by-piece in a serial fashion''\footnote{\hhref{https://en.wikipedia.org/wiki/Online\_algorithm}} and that it is ``only allowed to access the input in \emph{streaming fashion}''\footnote{\href{http://www.cs.dartmouth.edu/\~ac/Teach/CS49-Fall11/Notes/lecnotes.pdf}{CS49: Data Stream Algorithms - Lecture Notes Fall 2011, Amit Chakarabarti\\http://www.cs.dartmouth.edu/\~ac/Teach/CS49-Fall11/Notes/lecnotes.pdf}\label{fn}} and ``does not have random access to the tokens''.
+% The algorithm is short and straightforward and can be studied in Appendix \ref{frugal-alg}.
 
 Assume we know the number of highscores, $n$. By using the Frugal Streaming algorithm on the incoming highscores we also know at least two quantiles, for example $q_{25\%}$ and $q_{50\%}$ that are marked in Figure \ref{fig:frugal1}. At $q_{25\%}$ we have the highest score \mbox{25 \%} of the lowest ranked players (or lowest score of the other 75 \%). The same reasonings apply to quartile $q_{50\%}$, $\frac{n}{2}$ players have a lower score and $\frac{n}{2}$ have a higher score (For the moment, the possibility of an odd number of highscores is ignored).
 

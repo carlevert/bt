@@ -1,11 +1,10 @@
 \chapter{Introduction}
 
-Ranking can informally be defined as ``a relationship between a set of items such that, for any two items, the first is either 'ranked higher than', 'ranked lower than' or 'ranked equal to' the second''\footnote{\hhref{https://en.wikipedia.org/wiki/Ranking}}.
-\todo{Assigning numbers}
+Ranking can informally be defined as ``a relationship between a set of items such that, for any two items, the first is either 'ranked higher than', 'ranked lower than' or 'ranked equal to' the second''\footnote{\hhref{https://en.wikipedia.org/wiki/Ranking}}. Usually a rank number is assigned to the items such that the highest number receive rank number one.
 
 Ranking in computer games is mainly done to reward skilled or lucky players. Introducing a dimension of competetion makes the game more exciting and hopefully -- from the game makers point of view -- more profitable. This can be done by creating a leaderbord that shows the highest scores or by giving some measure of improvement to the player, eg. number of ranks advanced by the last game. Other reasons for ranking skills in computer games include gambling and matching equally skilled players for challenges.
 
-As a player of a computer game you want to know if you are making progress in your gaming. However, games that can be considered having even a moderate success on todays marketplaces have at least hundreds of thousands of players not knowing each other. Therefore, cheating by approximating ranks works perfectly fine most of the time. Also, approximated ranks come pretty close to the real rank as we shall see. In some cases though an exact rank needs to be calculated. Obviously it would be embarrassing if two players were estimated to have rank number one. In general, higher ranks calls for greater precision.
+As a player of a computer game one want to know if one are making progress in your gaming. However, games that can be considered having even a moderate success on todays marketplaces have at least hundreds of thousands of players not knowing each other. Therefore, cheating by approximating ranks works perfectly fine most of the time. Also, approximated ranks come close to the real rank as we shall see. In some cases though an exact rank needs to be calculated. Obviously it would be embarrassing if two players were estimated to have rank number one. In general, higher ranks calls for greater precision.
 
 \section{Ranking, a definition}
 
@@ -17,7 +16,7 @@ It is unfortunate that there is no commonly used, distinct word for \emph{rankin
 
 \section{Problem description, outline and methods}
 
-The overall goal is to investigate how to get the rank, exact or an approximation, for a new highscore in the context of an online computer game. Doing ranking of highscores by counting the number of highscores better than a specific score is not a feasible option. A tree-based approach to counting seems promising but have a number of drawbacks that will be discussed in section \ref{sec:tree}. Two methods based on linear interpolation will be presented: \emph{Buckets with Global Query} and a method relying on \emph{Frugal streaming} (\cref{bucket,frugal} will be discussed, the latter one for demonstrative purposes. Finally, a variant of the \emph{Buckets with Global Query}-algorithm with dynamic buckets will be presented and empirically evaluated in \cref{method,results,discussion}.
+The overall goal is to investigate how to get the rank, exact or an approximation, for a new highscore in the context of an online computer game. Doing ranking of highscores by counting the number of highscores better than a specific score is not a feasible option. A tree-based approach to counting seems promising but have a number of drawbacks that will be discussed in Section \ref{sec:tree}. Two methods based on linear interpolation will be presented: \emph{Buckets with Global Query} and a method relying on \emph{Frugal streaming} (Sections 2.3.1 and 2.3.2) will be discussed, the latter one for demonstrative purposes. Finally, a variant of the \emph{Buckets with Global Query}-algorithm with dynamic buckets will be presented and empirically evaluated in Chapters 3, 4 and 5.
 
 The questions to be researched in this thesis are
 
@@ -27,6 +26,6 @@ The questions to be researched in this thesis are
 \item What is the performance characteristics of Bucket with Global Query algorithm when adapting the buckets to changes in the underlying highscore distribution?
 \end{enumerate}
 
-To attend to the first question, a review of the ranking approaches mentioned above will be provided in \cref{ranking-algorithms}, starting by a naive approach derived from the definition of ranking, ending with a draft for a streaming and approximating approach. The algorithms presented in chapter \cref{ranking-algorithms} do certainly not represent a complete listing of all possible ways of solving the problem stated but will nevertheless provide some insight in the area.
+To attend to the first question, a review of the ranking approaches mentioned above will be provided in Chapter \ref{ranking-algorithms}, starting by a naive approach derived from the definition of ranking, ending with a draft for a streaming and approximating approach. The algorithms presented in Chapter \ref{ranking-algorithms} do certainly not represent a complete listing of all possible ways of solving the problem stated but will nevertheless provide some insight in the area.
 
-To answer the second question on the performance characteristics of the Buckets with Global Query with dynamic buckets, a system for evaluating the performance in terms of efficiency and precision is built. The precise method for this evaluation is left for \cref{method}.
+To answer the second question on the performance characteristics of the Buckets with Global Query with dynamic buckets, a system for evaluating the performance in terms of efficiency and precision is built. The precise method for this evaluation is left for \mbox{Chapter \ref{method}}.

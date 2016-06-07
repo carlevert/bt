@@ -1,28 +1,29 @@
 \begin{abstract}
 
-An abstract is a short description (10-20 lines) of your thesis. Because on-line
-search databases typically contain only abstracts, it is vital to write a
-complete but concise description of your work to entice potential readers into
-obtaining a copy of the full paper.
+  The task of ranking highscores in a computer game may sound like a trivial task. It turns out it is not, because the naive solution have a time complexity not suitable for online applications in terms of response time and running cost.
 
-Although an abstract is brief, it should do almost as much work as the multi-page 
-paper that follows it. Each chapter or section is typically a single sentence, 
-but there is always room for creativity. In particular, parts may be merged or 
-spread among a set of sentences.
+  An overview of a few approaches to ranking is presented: how an N-ary tree could be used to do ranking and how to do linear approximation. Two ways of obtaining a model for doing linear approximation are demonstrated, a method called \emph{Buckets with Global Query} is described and a method based on \emph{Frugal Streaming} is elaborated on.
+
+  Finally, a variant of the \emph{Buckets with Global Query} algorithm where the buckets are adjusted continuosly according to the changes in the distribution of highscores is evaluated. The dynamic variant of the algorithm performs well in terms of accuracy for at least 100 000 highscore updates but have no significant gains in reduced CPU-time.
 
 \end{abstract}
 
 \vskip2\baselineskip
-
+\vspace{5mm}
 \begin{center}
-  {\Large\bfseries Den svenska titeln}
+  {\Large\bfseries Att ranka rekord \\ \vspace{3mm}
+    \small En utvärdering av en dynamisk implementation\\av algoritmen \emph{Buckets with Global Query}}
 \end{center}
 
 \begin{abstract}[Sammanfattning]
-If you write in English you don't have to write an abstract in Swedish but if
-you write in Swedish you also must write an extended abstract in English. If you
-write a second abstract, in a language different from the report itself, you
-should also give the title in the second language.
+
+  
+  Den naiva lösningen till att ranka ett rekord i ett spel är att räkna antalet rekord som är bättre än det rekord man har för handen. Lösningen skalar inte då den har en tidskomplexitet på $\mathcal{O}(n)$ och kan därför inte användas i ett onlinespel då responstiden skulle bli för lång och kostnaden för hög.
+
+  En överblick över några sätt att angripa problemet presenteras; hur man kan lösa problemet med hjälp av ett träd samt tillvägagångssätt som bygger på linjär approximation. Två sätt att ta göra rankning med linjär approximation demonstreras. \emph{Buckets with Global Query} är en algoritm som bygger en modell av distributionen av alla rekord med jämna mellanrum. En alternativ lösning som bygger på en algoritm för att ta fram kvantiler ur en dataström presenteras.
+
+  Slutligen utvärderas en variant av \emph{Buckets with Global Query} där modellen som approximationerna görs ifrån kontinuerligt uppdateras för att motsvara den verkliga distributionen av alla rekord. Den dynamiska varianten av algoritmen har god precision men är inte nämnvärt effektivare än den ursprungliga.
+
 \end{abstract}
 
 \cleardoublepage

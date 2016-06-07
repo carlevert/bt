@@ -1,14 +1,19 @@
 \chapter{\label{discussion}Discussion and future directions}
 
-For the length of the experiment the relative error for the solution with the dynamic bucket-table remains practically constant\footnote{Linear regression gives that it is actually \emph{decreasing} with the data set used, albeit by a modest $-10^{-11}$ per highscore update.} Because the buckets for the higher ranks will grow in size (highscores always improve when updated), the approximations will get less accurate over time. The experiments were not run long enough to tell when the bucket-table would need to be recreated in the dynamic approach.
+For the length of the experiment the relative error for the solution with the dynamic bucket-table remains practically constant\footnote{Linear regression gives that it is actually \emph{decreasing} with the data set used, albeit by a modest $-10^{-11}$ per highscore update.}. Because the buckets for the higher ranks will grow in size (highscores always improve when updated), the approximations will get less accurate over time. The experiments were not run long enough to tell when the bucket-table would need to be recreated in the dynamic approach.
 
-While the data gained does not tell when the bucket-table would need to be recreated we can still assume that it would last for 100 000 updates.
+While the data gained do not tell when the bucket-table would need to be recreated we can still assume that it would last for 100 000 updates.
 
 
-\begin{table}[]
+
+What an acceptable error level would be is a question that ultimately needs to be answered by stakeholders in charge of the application the rank approximations are used in. However, having a mean realative error of 0.05 \% when approximating a rank at position 30 000 means having an error in absolute ranks of 15 and could hardly be considered not precise enough in a computer game.
+
+The hypothesis stated in Chapter 3 can be said to be true, however by an insignificant ammount of CPU-time. Table \ref{results} shows a summary of CPU-time used for the dynamic approach and the static approach. 
+
+\begin{table}[h!]
 \centering
-\caption{My caption}
-\label{my-label}
+\caption{Total execution time, dynamic versus static buckets.}
+\label{results}
 \vspace{4mm}
 \begin{tabular}{l|c|cccc}
 
@@ -22,17 +27,13 @@ Total time (s)                 & 771                    & 796                   
 \vspace{4mm}
 \end{table}
 
-What an acceptable error level would be is a question that ultimately needs to be answered by stakeholders in charge of the application the rank approximations are used in. However, having a mean realative error of 0.05 \% when approximating a rank at position 30 000 means having an error in absolute ranks of 15 and could hardly be considered not precise enough in a computer game.
-
 
 \section*{Next up}
 
 There are a number of interesting paths to follow from here and the number one and two priorities should be to perform the experiment on a real platform and doing the experiments with different random seeds.
 
+\clearpage
+
 Also, there are a lot of parameters that could be tweeked, such as properties of the distribution of the initial highscores and the new highscores, as well as the distribution of the players actually playing. The impact of the size of the buckets is not investigated at all in this thesis.
 
 Optimizing the new implementation by utilizing the memory cache available in Google App Engine directly in the ranking function instead of relying on the cache functionality built into Objectify would probably result in significant performance gains.
-
-\vspace{20mm}
-\textbf{\Huge
-\texttt{\^}\texttt{D}}
